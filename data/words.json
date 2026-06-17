@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "サンプル単語帳",
+    "description": "英単語サンプル。data/words.json を編集して自分のデータに差し替えてください。"
+  },
+  "cards": [
+    { "id": "w001", "front": "apple", "back": "りんご", "category": "果物", "hint": "赤い果物" },
+    { "id": "w002", "front": "banana", "back": "バナナ", "category": "果物", "hint": "黄色く細長い" },
+    { "id": "w003", "front": "grape", "back": "ぶどう", "category": "果物", "hint": "房になる" },
+    { "id": "w004", "front": "dog", "back": "犬", "category": "動物", "hint": "ワンと鳴く" },
+    { "id": "w005", "front": "cat", "back": "猫", "category": "動物", "hint": "ニャーと鳴く" },
+    { "id": "w006", "front": "elephant", "back": "象", "category": "動物", "hint": "鼻が長い" },
+    { "id": "w007", "front": "run", "back": "走る", "category": "動詞", "hint": "速く移動する" },
+    { "id": "w008", "front": "eat", "back": "食べる", "category": "動詞", "hint": "口に入れる" },
+    { "id": "w009", "front": "sleep", "back": "眠る", "category": "動詞", "hint": "夜にすること" },
+    { "id": "w010", "front": "beautiful", "back": "美しい", "category": "形容詞", "hint": "見た目が良い" },
+    { "id": "w011", "front": "fast", "back": "速い", "category": "形容詞", "hint": "スピードがある" },
+    { "id": "w012", "front": "difficult", "back": "難しい", "category": "形容詞", "hint": "easy の反対" }
+  ]
+}

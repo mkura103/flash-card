@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>単語帳アプリ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1 id="deck-title">単語帳</h1>
+    <p id="deck-desc" class="deck-desc"></p>
+  </header>
+
+  <main class="app-main">
+    <!-- コントロールバー -->
+    <section class="controls" aria-label="出題設定">
+      <div class="control-group">
+        <label for="category-select">カテゴリ</label>
+        <select id="category-select"></select>
+      </div>
+      <div class="control-group">
+        <label for="mode-select">出題順</label>
+        <select id="mode-select">
+          <option value="shuffle">シャッフル</option>
+          <option value="order">登録順</option>
+          <option value="srs">習熟度優先（苦手から）</option>
+        </select>
+      </div>
+      <div class="control-group control-group--check">
+        <label for="only-weak">
+          <input type="checkbox" id="only-weak" />
+          苦手のみ出題
+        </label>
+      </div>
+      <button id="restart-btn" class="btn btn--secondary" type="button">やり直す</button>
+    </section>
+
+    <!-- 進捗 -->
+    <section class="progress-bar" aria-label="進捗">
+      <div class="progress-track"><div id="progress-fill" class="progress-fill"></div></div>
+      <div class="progress-text">
+        <span id="progress-count">0 / 0</span>
+        <span id="accuracy-text" class="accuracy">正答率 -</span>
+      </div>
+    </section>
+
+    <!-- カード -->
+    <section class="card-area">
+      <div id="card" class="card" role="button" tabindex="0" aria-label="カードをめくる">
+        <div class="card-inner">
+          <div class="card-face card-front">
+            <span class="card-category" id="card-category"></span>
+            <span class="card-text" id="card-front-text"></span>
+            <span class="card-hint" id="card-hint"></span>
+            <span class="card-flip-hint">タップ / Space でめくる</span>
+          </div>
+          <div class="card-face card-back">
+            <span class="card-text" id="card-back-text"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 判定ボタン -->
+    <section class="answer-controls">
+      <button id="known-btn" class="btn btn--known" type="button">覚えた</button>
+      <button id="unknown-btn" class="btn btn--unknown" type="button">まだ</button>
+    </section>
+
+    <p id="empty-message" class="empty-message" hidden>出題できるカードがありません。設定を変えてください。</p>
+  </main>
+
+  <footer class="app-footer">
+    <button id="reset-progress-btn" class="btn btn--link" type="button">学習記録をリセット</button>
+    <span id="stats-summary" class="stats-summary"></span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
