@@ -13,7 +13,7 @@ const state = {
   index: 0,           // queue 内の現在位置
   flipped: false,
   progress: {},       // id -> { level, correct, wrong, lastSeen }
-  settings: { category: "all", mode: "shuffle", onlyWeak: false },
+  settings: { category: "all", difficulty: "all", mode: "shuffle", onlyWeak: false },
 };
 
 // DOM
@@ -21,6 +21,7 @@ const el = {
   title: document.getElementById("deck-title"),
   desc: document.getElementById("deck-desc"),
   categorySelect: document.getElementById("category-select"),
+  difficultySelect: document.getElementById("difficulty-select"),
   modeSelect: document.getElementById("mode-select"),
   onlyWeak: document.getElementById("only-weak"),
   restartBtn: document.getElementById("restart-btn"),
@@ -29,6 +30,7 @@ const el = {
   accuracyText: document.getElementById("accuracy-text"),
   card: document.getElementById("card"),
   cardCategory: document.getElementById("card-category"),
+  cardDifficulty: document.getElementById("card-difficulty"),
   frontText: document.getElementById("card-front-text"),
   hint: document.getElementById("card-hint"),
   backText: document.getElementById("card-back-text"),
@@ -99,9 +101,13 @@ function shuffle(arr) {
 }
 
 function buildQueue() {
-  const { category, mode, onlyWeak } = state.settings;
+  const { category, difficulty, mode, onlyWeak } = state.settings;
 
   let pool = state.cards.filter((c) => category === "all" || c.category === category);
+
+  if (difficulty !== "all") {
+    pool = pool.filter((c) => String(c.difficulty) === String(difficulty));
+  }
 
   if (onlyWeak) {
     pool = pool.filter((c) => getCardProgress(c.id).level < WEAK_THRESHOLD);
@@ -139,6 +145,7 @@ function populateCategories() {
     el.categorySelect.appendChild(opt);
   }
   el.categorySelect.value = state.settings.category;
+  el.difficultySelect.value = state.settings.difficulty;
   el.modeSelect.value = state.settings.mode;
   el.onlyWeak.checked = state.settings.onlyWeak;
 }
@@ -178,6 +185,15 @@ function render() {
 
   el.cardCategory.textContent = card.category || "";
   el.cardCategory.style.display = card.category ? "inline-block" : "none";
+
+  const diff = Number(card.difficulty);
+  if (diff >= 1 && diff <= 3) {
+    el.cardDifficulty.textContent = "★".repeat(diff);
+    el.cardDifficulty.title = ["", "易しい", "ふつう", "難しい"][diff];
+    el.cardDifficulty.style.display = "inline-block";
+  } else {
+    el.cardDifficulty.style.display = "none";
+  }
   el.frontText.textContent = card.front;
   el.hint.textContent = card.hint || "";
   el.hint.style.display = card.hint ? "block" : "none";
@@ -258,6 +274,11 @@ function bindEvents() {
 
   el.categorySelect.addEventListener("change", () => {
     state.settings.category = el.categorySelect.value;
+    saveSettings();
+    restart();
+  });
+  el.difficultySelect.addEventListener("change", () => {
+    state.settings.difficulty = el.difficultySelect.value;
     saveSettings();
     restart();
   });

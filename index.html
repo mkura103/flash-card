@@ -20,6 +20,15 @@
         <select id="category-select"></select>
       </div>
       <div class="control-group">
+        <label for="difficulty-select">難易度</label>
+        <select id="difficulty-select">
+          <option value="all">すべて</option>
+          <option value="1">★ 易しい</option>
+          <option value="2">★★ ふつう</option>
+          <option value="3">★★★ 難しい</option>
+        </select>
+      </div>
+      <div class="control-group">
         <label for="mode-select">出題順</label>
         <select id="mode-select">
           <option value="shuffle">シャッフル</option>
@@ -50,7 +59,10 @@
       <div id="card" class="card" role="button" tabindex="0" aria-label="カードをめくる">
         <div class="card-inner">
           <div class="card-face card-front">
-            <span class="card-category" id="card-category"></span>
+            <div class="card-tags">
+              <span class="card-category" id="card-category"></span>
+              <span class="card-difficulty" id="card-difficulty"></span>
+            </div>
             <span class="card-text" id="card-front-text"></span>
             <span class="card-hint" id="card-hint"></span>
             <span class="card-flip-hint">タップ / Space でめくる</span>
