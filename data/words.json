@@ -1,20 +1,7840 @@
 {
   "meta": {
-    "title": "サンプル単語帳",
-    "description": "英単語サンプル。data/words.json を編集して自分のデータに差し替えてください。"
+    "title": "日常会話の英単語帳",
+    "description": "日常会話で使う頻出英単語 979 語。テーマ別カテゴリ・難易度(★1〜3)付き。"
   },
   "cards": [
-    { "id": "w001", "front": "apple", "back": "りんご", "category": "果物", "difficulty": 1, "hint": "赤い果物" },
-    { "id": "w002", "front": "banana", "back": "バナナ", "category": "果物", "difficulty": 1, "hint": "黄色く細長い" },
-    { "id": "w003", "front": "grape", "back": "ぶどう", "category": "果物", "difficulty": 2, "hint": "房になる" },
-    { "id": "w004", "front": "dog", "back": "犬", "category": "動物", "difficulty": 1, "hint": "ワンと鳴く" },
-    { "id": "w005", "front": "cat", "back": "猫", "category": "動物", "difficulty": 1, "hint": "ニャーと鳴く" },
-    { "id": "w006", "front": "elephant", "back": "象", "category": "動物", "difficulty": 2, "hint": "鼻が長い" },
-    { "id": "w007", "front": "run", "back": "走る", "category": "動詞", "difficulty": 1, "hint": "速く移動する" },
-    { "id": "w008", "front": "eat", "back": "食べる", "category": "動詞", "difficulty": 1, "hint": "口に入れる" },
-    { "id": "w009", "front": "sleep", "back": "眠る", "category": "動詞", "difficulty": 2, "hint": "夜にすること" },
-    { "id": "w010", "front": "beautiful", "back": "美しい", "category": "形容詞", "difficulty": 3, "hint": "見た目が良い" },
-    { "id": "w011", "front": "fast", "back": "速い", "category": "形容詞", "difficulty": 2, "hint": "スピードがある" },
-    { "id": "w012", "front": "difficult", "back": "難しい", "category": "形容詞", "difficulty": 3, "hint": "easy の反対" }
+    {
+      "id": "w0001",
+      "front": "hello",
+      "back": "こんにちは、もしもし",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "最も基本のあいさつ"
+    },
+    {
+      "id": "w0002",
+      "front": "hi",
+      "back": "やあ、こんにちは",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "helloより砕けた"
+    },
+    {
+      "id": "w0003",
+      "front": "hey",
+      "back": "おい、ねえ",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "呼びかけ・カジュアル"
+    },
+    {
+      "id": "w0004",
+      "front": "goodbye",
+      "back": "さようなら",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0005",
+      "front": "bye",
+      "back": "バイバイ、じゃあね",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "goodbyeの略"
+    },
+    {
+      "id": "w0006",
+      "front": "thanks",
+      "back": "ありがとう",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "thank youの略式"
+    },
+    {
+      "id": "w0007",
+      "front": "thank you",
+      "back": "ありがとう（ございます）",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "2語の定型句"
+    },
+    {
+      "id": "w0008",
+      "front": "sorry",
+      "back": "ごめんなさい、すみません",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "謝罪・残念"
+    },
+    {
+      "id": "w0009",
+      "front": "please",
+      "back": "どうぞ、お願いします",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "依頼を丁寧に"
+    },
+    {
+      "id": "w0010",
+      "front": "excuse",
+      "back": "許す、大目に見る(動)／言い訳(名)",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "excuse me で失礼します"
+    },
+    {
+      "id": "w0011",
+      "front": "welcome",
+      "back": "ようこそ／どういたしまして",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "you're welcome"
+    },
+    {
+      "id": "w0012",
+      "front": "yes",
+      "back": "はい",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0013",
+      "front": "no",
+      "back": "いいえ",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0014",
+      "front": "okay",
+      "back": "よろしい、了解",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "OKとも"
+    },
+    {
+      "id": "w0015",
+      "front": "sure",
+      "back": "もちろん、いいですよ",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "承諾の相づち"
+    },
+    {
+      "id": "w0016",
+      "front": "morning",
+      "back": "朝、おはよう",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "good morning"
+    },
+    {
+      "id": "w0017",
+      "front": "afternoon",
+      "back": "午後、こんにちは",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "good afternoon"
+    },
+    {
+      "id": "w0018",
+      "front": "evening",
+      "back": "夕方、こんばんは",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "good evening"
+    },
+    {
+      "id": "w0019",
+      "front": "night",
+      "back": "夜、おやすみ",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "good night"
+    },
+    {
+      "id": "w0020",
+      "front": "fine",
+      "back": "元気な、結構な(形)",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "I'm fine"
+    },
+    {
+      "id": "w0021",
+      "front": "good",
+      "back": "よい、元気な(形)",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0022",
+      "front": "great",
+      "back": "すばらしい、最高の(形)",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "強い肯定の相づち"
+    },
+    {
+      "id": "w0023",
+      "front": "nice",
+      "back": "すてきな、いい(形)",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "nice to meet you"
+    },
+    {
+      "id": "w0024",
+      "front": "meet",
+      "back": "会う、出会う(動)",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0025",
+      "front": "name",
+      "back": "名前",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0026",
+      "front": "how",
+      "back": "どのように、どれくらい",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "how are you"
+    },
+    {
+      "id": "w0027",
+      "front": "again",
+      "back": "再び、もう一度",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "see you again"
+    },
+    {
+      "id": "w0028",
+      "front": "later",
+      "back": "後で、また後で",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "see you later"
+    },
+    {
+      "id": "w0029",
+      "front": "care",
+      "back": "気にかける、世話(動/名)",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "take care"
+    },
+    {
+      "id": "w0030",
+      "front": "luck",
+      "back": "運、幸運",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "good luck"
+    },
+    {
+      "id": "w0031",
+      "front": "congratulations",
+      "back": "おめでとう",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "複数形で使う"
+    },
+    {
+      "id": "w0032",
+      "front": "cheers",
+      "back": "乾杯／ありがとう(英)",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "英国では感謝にも"
+    },
+    {
+      "id": "w0033",
+      "front": "hooray",
+      "back": "やったあ、万歳",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "喜びの叫び"
+    },
+    {
+      "id": "w0034",
+      "front": "oops",
+      "back": "おっと、しまった",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "小さな失敗時"
+    },
+    {
+      "id": "w0035",
+      "front": "wow",
+      "back": "わあ、すごい",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "驚きの相づち"
+    },
+    {
+      "id": "w0036",
+      "front": "really",
+      "back": "本当に、ほんと？",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "相づちにも"
+    },
+    {
+      "id": "w0037",
+      "front": "indeed",
+      "back": "確かに、本当に",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "強い同意"
+    },
+    {
+      "id": "w0038",
+      "front": "absolutely",
+      "back": "絶対に、その通り",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "強い肯定"
+    },
+    {
+      "id": "w0039",
+      "front": "certainly",
+      "back": "確かに、かしこまりました",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "丁寧な承諾"
+    },
+    {
+      "id": "w0040",
+      "front": "definitely",
+      "back": "間違いなく、確かに",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0041",
+      "front": "maybe",
+      "back": "たぶん、もしかすると",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0042",
+      "front": "perhaps",
+      "back": "おそらく、たぶん",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "maybeより硬い"
+    },
+    {
+      "id": "w0043",
+      "front": "probably",
+      "back": "おそらく、たぶん",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0044",
+      "front": "of course",
+      "back": "もちろん",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "2語の定型句"
+    },
+    {
+      "id": "w0045",
+      "front": "pardon",
+      "back": "もう一度言って／許す(動)",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "聞き返し"
+    },
+    {
+      "id": "w0046",
+      "front": "regards",
+      "back": "よろしく、敬意",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "best regards"
+    },
+    {
+      "id": "w0047",
+      "front": "farewell",
+      "back": "別れ、さようなら",
+      "category": "あいさつ・会話",
+      "difficulty": 3,
+      "hint": "やや格式ばった別れ"
+    },
+    {
+      "id": "w0048",
+      "front": "greetings",
+      "back": "あいさつ、ごあいさつ",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0049",
+      "front": "howdy",
+      "back": "やあ、どうも",
+      "category": "あいさつ・会話",
+      "difficulty": 3,
+      "hint": "米国南部の砕けたあいさつ"
+    },
+    {
+      "id": "w0050",
+      "front": "alright",
+      "back": "大丈夫、よろしい",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "all rightとも"
+    },
+    {
+      "id": "w0051",
+      "front": "agree",
+      "back": "同意する、賛成する(動)",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "I agree"
+    },
+    {
+      "id": "w0052",
+      "front": "understand",
+      "back": "理解する、わかる(動)",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "I understand"
+    },
+    {
+      "id": "w0053",
+      "front": "know",
+      "back": "知っている、わかる(動)",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "I know"
+    },
+    {
+      "id": "w0054",
+      "front": "forgive",
+      "back": "許す(動)",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "forgive me"
+    },
+    {
+      "id": "w0055",
+      "front": "mind",
+      "back": "気にする(動)／心(名)",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "never mind"
+    },
+    {
+      "id": "w0056",
+      "front": "appreciate",
+      "back": "感謝する、ありがたく思う(動)",
+      "category": "あいさつ・会話",
+      "difficulty": 3,
+      "hint": "丁寧な感謝"
+    },
+    {
+      "id": "w0057",
+      "front": "apologize",
+      "back": "謝る、謝罪する(動)",
+      "category": "あいさつ・会話",
+      "difficulty": 3,
+      "hint": "sorryの丁寧版"
+    },
+    {
+      "id": "w0058",
+      "front": "wonderful",
+      "back": "すばらしい、見事な(形)",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0059",
+      "front": "awesome",
+      "back": "すごい、最高の(形)",
+      "category": "あいさつ・会話",
+      "difficulty": 2,
+      "hint": "カジュアルな称賛"
+    },
+    {
+      "id": "w0060",
+      "front": "goodnight",
+      "back": "おやすみなさい",
+      "category": "あいさつ・会話",
+      "difficulty": 1,
+      "hint": "good nightとも"
+    },
+    {
+      "id": "w0061",
+      "front": "family",
+      "back": "家族",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0062",
+      "front": "mother",
+      "back": "母",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0063",
+      "front": "father",
+      "back": "父",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0064",
+      "front": "parent",
+      "back": "親",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0065",
+      "front": "child",
+      "back": "子供",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": "複数形 children"
+    },
+    {
+      "id": "w0066",
+      "front": "baby",
+      "back": "赤ちゃん",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0067",
+      "front": "brother",
+      "back": "兄、弟",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0068",
+      "front": "sister",
+      "back": "姉、妹",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0069",
+      "front": "son",
+      "back": "息子",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0070",
+      "front": "daughter",
+      "back": "娘",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0071",
+      "front": "grandfather",
+      "back": "祖父",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0072",
+      "front": "grandmother",
+      "back": "祖母",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0073",
+      "front": "grandparent",
+      "back": "祖父母",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0074",
+      "front": "uncle",
+      "back": "おじ",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0075",
+      "front": "aunt",
+      "back": "おば",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0076",
+      "front": "cousin",
+      "back": "いとこ",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": "発音 /ˈkʌzn/"
+    },
+    {
+      "id": "w0077",
+      "front": "nephew",
+      "back": "おい（甥）",
+      "category": "人・家族",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0078",
+      "front": "niece",
+      "back": "めい（姪）",
+      "category": "人・家族",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0079",
+      "front": "husband",
+      "back": "夫",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0080",
+      "front": "wife",
+      "back": "妻",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": "複数形 wives"
+    },
+    {
+      "id": "w0081",
+      "front": "relative",
+      "back": "親戚",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0082",
+      "front": "friend",
+      "back": "友達",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0083",
+      "front": "neighbor",
+      "back": "隣人",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": "英 neighbour"
+    },
+    {
+      "id": "w0084",
+      "front": "people",
+      "back": "人々",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": "person の複数"
+    },
+    {
+      "id": "w0085",
+      "front": "person",
+      "back": "人",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0086",
+      "front": "man",
+      "back": "男性",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": "複数 men"
+    },
+    {
+      "id": "w0087",
+      "front": "woman",
+      "back": "女性",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": "複数 women"
+    },
+    {
+      "id": "w0088",
+      "front": "boy",
+      "back": "少年",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0089",
+      "front": "girl",
+      "back": "少女",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0090",
+      "front": "adult",
+      "back": "大人",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0091",
+      "front": "teenager",
+      "back": "ティーンエイジャー、十代の若者",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0092",
+      "front": "teacher",
+      "back": "教師",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0093",
+      "front": "student",
+      "back": "生徒、学生",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0094",
+      "front": "doctor",
+      "back": "医者",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0095",
+      "front": "nurse",
+      "back": "看護師",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0096",
+      "front": "dentist",
+      "back": "歯医者",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0097",
+      "front": "police",
+      "back": "警察",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0098",
+      "front": "officer",
+      "back": "警官、役人",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0099",
+      "front": "farmer",
+      "back": "農家、農業従事者",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0100",
+      "front": "driver",
+      "back": "運転手",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0101",
+      "front": "cook",
+      "back": "料理人、(動)料理する",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0102",
+      "front": "singer",
+      "back": "歌手",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0103",
+      "front": "writer",
+      "back": "作家",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0104",
+      "front": "artist",
+      "back": "芸術家",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0105",
+      "front": "engineer",
+      "back": "技術者、エンジニア",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0106",
+      "front": "scientist",
+      "back": "科学者",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0107",
+      "front": "lawyer",
+      "back": "弁護士",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0108",
+      "front": "manager",
+      "back": "管理者、店長",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0109",
+      "front": "worker",
+      "back": "労働者",
+      "category": "人・家族",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0110",
+      "front": "boss",
+      "back": "上司",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0111",
+      "front": "president",
+      "back": "大統領、社長",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0112",
+      "front": "customer",
+      "back": "客、顧客",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0113",
+      "front": "guest",
+      "back": "客、ゲスト",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": "招待客"
+    },
+    {
+      "id": "w0114",
+      "front": "partner",
+      "back": "パートナー、相棒",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0115",
+      "front": "member",
+      "back": "会員、一員",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0116",
+      "front": "stranger",
+      "back": "見知らぬ人",
+      "category": "人・家族",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0117",
+      "front": "couple",
+      "back": "カップル、2人",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0118",
+      "front": "colleague",
+      "back": "同僚",
+      "category": "人・家族",
+      "difficulty": 3,
+      "hint": "発音 /ˈkɒliːɡ/"
+    },
+    {
+      "id": "w0119",
+      "front": "owner",
+      "back": "所有者、持ち主",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0120",
+      "front": "leader",
+      "back": "指導者、リーダー",
+      "category": "人・家族",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0121",
+      "front": "head",
+      "back": "頭",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0122",
+      "front": "hand",
+      "back": "手",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0123",
+      "front": "heart",
+      "back": "心臓、心",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0124",
+      "front": "eye",
+      "back": "目",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0125",
+      "front": "ear",
+      "back": "耳",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0126",
+      "front": "nose",
+      "back": "鼻",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0127",
+      "front": "mouth",
+      "back": "口",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0128",
+      "front": "tooth",
+      "back": "歯",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": "複数形teeth"
+    },
+    {
+      "id": "w0129",
+      "front": "face",
+      "back": "顔",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0130",
+      "front": "hair",
+      "back": "髪",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0131",
+      "front": "arm",
+      "back": "腕",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0132",
+      "front": "leg",
+      "back": "脚",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0133",
+      "front": "foot",
+      "back": "足",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": "複数形feet"
+    },
+    {
+      "id": "w0134",
+      "front": "finger",
+      "back": "指",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": "手の指"
+    },
+    {
+      "id": "w0135",
+      "front": "knee",
+      "back": "膝",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": "kは発音しない"
+    },
+    {
+      "id": "w0136",
+      "front": "shoulder",
+      "back": "肩",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0137",
+      "front": "neck",
+      "back": "首",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0138",
+      "front": "back",
+      "back": "背中",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0139",
+      "front": "stomach",
+      "back": "胃、おなか",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0140",
+      "front": "skin",
+      "back": "肌、皮膚",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0141",
+      "front": "bone",
+      "back": "骨",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0142",
+      "front": "blood",
+      "back": "血",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0143",
+      "front": "brain",
+      "back": "脳",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0144",
+      "front": "throat",
+      "back": "のど",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0145",
+      "front": "tongue",
+      "back": "舌",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0146",
+      "front": "chest",
+      "back": "胸",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0147",
+      "front": "lip",
+      "back": "唇",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0148",
+      "front": "toe",
+      "back": "足の指",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0149",
+      "front": "wrist",
+      "back": "手首",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0150",
+      "front": "ankle",
+      "back": "足首",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0151",
+      "front": "sick",
+      "back": "(形)病気の、気分が悪い",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0152",
+      "front": "ill",
+      "back": "(形)病気の",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": "sickと類義"
+    },
+    {
+      "id": "w0153",
+      "front": "healthy",
+      "back": "(形)健康な",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0154",
+      "front": "health",
+      "back": "健康",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0155",
+      "front": "tired",
+      "back": "(形)疲れた、眠い",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0156",
+      "front": "hungry",
+      "back": "(形)空腹の",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0157",
+      "front": "thirsty",
+      "back": "(形)のどが渇いた",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0158",
+      "front": "sleepy",
+      "back": "(形)眠い",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0159",
+      "front": "hospital",
+      "back": "病院",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0160",
+      "front": "medicine",
+      "back": "薬、医学",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0161",
+      "front": "pain",
+      "back": "痛み",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0162",
+      "front": "fever",
+      "back": "熱",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0163",
+      "front": "cough",
+      "back": "せき、(動)せきをする",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": "発音コフ"
+    },
+    {
+      "id": "w0164",
+      "front": "cold",
+      "back": "風邪、(形)寒い",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0165",
+      "front": "headache",
+      "back": "頭痛",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0166",
+      "front": "stomachache",
+      "back": "腹痛",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0167",
+      "front": "toothache",
+      "back": "歯痛",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0168",
+      "front": "injury",
+      "back": "けが、負傷",
+      "category": "体・健康",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0169",
+      "front": "hurt",
+      "back": "(動)痛む、傷つける",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0170",
+      "front": "rest",
+      "back": "休息、(動)休む",
+      "category": "体・健康",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0171",
+      "front": "breathe",
+      "back": "(動)呼吸する",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": "名詞はbreath"
+    },
+    {
+      "id": "w0172",
+      "front": "weight",
+      "back": "体重、重さ",
+      "category": "体・健康",
+      "difficulty": 2,
+      "hint": "ghは発音しない"
+    },
+    {
+      "id": "w0173",
+      "front": "rice",
+      "back": "米、ごはん",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0174",
+      "front": "bread",
+      "back": "パン",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0175",
+      "front": "water",
+      "back": "水",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0176",
+      "front": "coffee",
+      "back": "コーヒー",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0177",
+      "front": "tea",
+      "back": "茶、紅茶",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0178",
+      "front": "milk",
+      "back": "牛乳、ミルク",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0179",
+      "front": "juice",
+      "back": "ジュース、果汁",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0180",
+      "front": "meat",
+      "back": "肉",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0181",
+      "front": "fish",
+      "back": "魚",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0182",
+      "front": "egg",
+      "back": "卵",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0183",
+      "front": "fruit",
+      "back": "果物",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0184",
+      "front": "apple",
+      "back": "りんご",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0185",
+      "front": "orange",
+      "back": "オレンジ、みかん",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0186",
+      "front": "banana",
+      "back": "バナナ",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0187",
+      "front": "vegetable",
+      "back": "野菜",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0188",
+      "front": "potato",
+      "back": "じゃがいも",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0189",
+      "front": "tomato",
+      "back": "トマト",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0190",
+      "front": "onion",
+      "back": "玉ねぎ",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0191",
+      "front": "carrot",
+      "back": "にんじん",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0192",
+      "front": "salad",
+      "back": "サラダ",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0193",
+      "front": "soup",
+      "back": "スープ",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0194",
+      "front": "cheese",
+      "back": "チーズ",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0195",
+      "front": "butter",
+      "back": "バター",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0196",
+      "front": "sugar",
+      "back": "砂糖",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0197",
+      "front": "salt",
+      "back": "塩",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0198",
+      "front": "pepper",
+      "back": "こしょう、ピーマン",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0199",
+      "front": "chicken",
+      "back": "鶏肉、ニワトリ",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0200",
+      "front": "beef",
+      "back": "牛肉",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0201",
+      "front": "pork",
+      "back": "豚肉",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0202",
+      "front": "soda",
+      "back": "炭酸飲料、ソーダ",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0203",
+      "front": "beer",
+      "back": "ビール",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0204",
+      "front": "wine",
+      "back": "ワイン",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0205",
+      "front": "cake",
+      "back": "ケーキ",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0206",
+      "front": "cookie",
+      "back": "クッキー",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0207",
+      "front": "chocolate",
+      "back": "チョコレート",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0208",
+      "front": "candy",
+      "back": "あめ、お菓子",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0209",
+      "front": "ice",
+      "back": "氷",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0210",
+      "front": "breakfast",
+      "back": "朝食",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0211",
+      "front": "lunch",
+      "back": "昼食",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0212",
+      "front": "dinner",
+      "back": "夕食",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0213",
+      "front": "meal",
+      "back": "食事",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0214",
+      "front": "food",
+      "back": "食べ物",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0215",
+      "front": "drink",
+      "back": "飲み物、(動)飲む",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0216",
+      "front": "eat",
+      "back": "(動)食べる",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0217",
+      "front": "delicious",
+      "back": "(形)おいしい",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0218",
+      "front": "sweet",
+      "back": "(形)甘い",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0219",
+      "front": "hot",
+      "back": "(形)熱い、辛い",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0220",
+      "front": "sandwich",
+      "back": "サンドイッチ",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0221",
+      "front": "hamburger",
+      "back": "ハンバーガー",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0222",
+      "front": "pizza",
+      "back": "ピザ",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0223",
+      "front": "noodle",
+      "back": "麺",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0224",
+      "front": "soy",
+      "back": "大豆、しょうゆ(の)",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": "soy sauce=しょうゆ"
+    },
+    {
+      "id": "w0225",
+      "front": "sauce",
+      "back": "ソース、たれ",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0226",
+      "front": "oil",
+      "back": "油",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0227",
+      "front": "flour",
+      "back": "小麦粉",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": "発音はflowerと同じ"
+    },
+    {
+      "id": "w0228",
+      "front": "corn",
+      "back": "とうもろこし",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0229",
+      "front": "bean",
+      "back": "豆",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0230",
+      "front": "grape",
+      "back": "ぶどう",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0231",
+      "front": "strawberry",
+      "back": "いちご",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0232",
+      "front": "lemon",
+      "back": "レモン",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0233",
+      "front": "peach",
+      "back": "もも",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0234",
+      "front": "cherry",
+      "back": "さくらんぼ",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0235",
+      "front": "melon",
+      "back": "メロン",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0236",
+      "front": "yogurt",
+      "back": "ヨーグルト",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0237",
+      "front": "honey",
+      "back": "はちみつ",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0238",
+      "front": "jam",
+      "back": "ジャム",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0239",
+      "front": "snack",
+      "back": "軽食、おやつ",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0240",
+      "front": "dessert",
+      "back": "デザート",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": "砂漠desertと混同注意"
+    },
+    {
+      "id": "w0241",
+      "front": "plate",
+      "back": "皿",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0242",
+      "front": "cup",
+      "back": "カップ、茶わん",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0243",
+      "front": "bowl",
+      "back": "ボウル、どんぶり",
+      "category": "食べ物・飲み物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0244",
+      "front": "menu",
+      "back": "メニュー、献立",
+      "category": "食べ物・飲み物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0245",
+      "front": "house",
+      "back": "家",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": "建物としての家"
+    },
+    {
+      "id": "w0246",
+      "front": "home",
+      "back": "家、家庭",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": "くつろぐ場所としての家"
+    },
+    {
+      "id": "w0247",
+      "front": "room",
+      "back": "部屋",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0248",
+      "front": "door",
+      "back": "ドア、扉",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0249",
+      "front": "window",
+      "back": "窓",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0250",
+      "front": "wall",
+      "back": "壁",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0251",
+      "front": "floor",
+      "back": "床、階",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": "1st floorは1階"
+    },
+    {
+      "id": "w0252",
+      "front": "roof",
+      "back": "屋根",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0253",
+      "front": "ceiling",
+      "back": "天井",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0254",
+      "front": "stairs",
+      "back": "階段",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": "複数形で使う"
+    },
+    {
+      "id": "w0255",
+      "front": "kitchen",
+      "back": "台所、キッチン",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0256",
+      "front": "bathroom",
+      "back": "浴室、トイレ",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0257",
+      "front": "bedroom",
+      "back": "寝室",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0258",
+      "front": "garden",
+      "back": "庭",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0259",
+      "front": "yard",
+      "back": "庭、裏庭",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0260",
+      "front": "garage",
+      "back": "車庫、ガレージ",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0261",
+      "front": "table",
+      "back": "テーブル、机",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0262",
+      "front": "desk",
+      "back": "机",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": "勉強・仕事用の机"
+    },
+    {
+      "id": "w0263",
+      "front": "chair",
+      "back": "いす",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0264",
+      "front": "sofa",
+      "back": "ソファ",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0265",
+      "front": "bed",
+      "back": "ベッド",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0266",
+      "front": "shelf",
+      "back": "棚",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": "複数形はshelves"
+    },
+    {
+      "id": "w0267",
+      "front": "drawer",
+      "back": "引き出し",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0268",
+      "front": "closet",
+      "back": "クローゼット、押し入れ",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0269",
+      "front": "mirror",
+      "back": "鏡",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0270",
+      "front": "curtain",
+      "back": "カーテン",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0271",
+      "front": "carpet",
+      "back": "じゅうたん、カーペット",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0272",
+      "front": "lamp",
+      "back": "ランプ、電気スタンド",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0273",
+      "front": "light",
+      "back": "明かり、照明",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0274",
+      "front": "clock",
+      "back": "時計",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": "置き・掛け時計"
+    },
+    {
+      "id": "w0275",
+      "front": "key",
+      "back": "かぎ",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0276",
+      "front": "lock",
+      "back": "錠、ロック (動)かぎをかける",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0277",
+      "front": "refrigerator",
+      "back": "冷蔵庫",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": "略してfridge"
+    },
+    {
+      "id": "w0278",
+      "front": "fridge",
+      "back": "冷蔵庫 (口語)",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0279",
+      "front": "oven",
+      "back": "オーブン",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0280",
+      "front": "stove",
+      "back": "コンロ、レンジ",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0281",
+      "front": "sink",
+      "back": "流し、洗面台",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0282",
+      "front": "dish",
+      "back": "皿、料理",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0283",
+      "front": "glass",
+      "back": "コップ、ガラス",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0284",
+      "front": "fork",
+      "back": "フォーク",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0285",
+      "front": "spoon",
+      "back": "スプーン",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0286",
+      "front": "knife",
+      "back": "ナイフ、包丁",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": "複数形はknives"
+    },
+    {
+      "id": "w0287",
+      "front": "pot",
+      "back": "なべ、つぼ",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0288",
+      "front": "pan",
+      "back": "フライパン、なべ",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0289",
+      "front": "towel",
+      "back": "タオル",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0290",
+      "front": "soap",
+      "back": "せっけん",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0291",
+      "front": "brush",
+      "back": "ブラシ、はけ",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0292",
+      "front": "comb",
+      "back": "くし",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": "bは発音しない"
+    },
+    {
+      "id": "w0293",
+      "front": "blanket",
+      "back": "毛布",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0294",
+      "front": "pillow",
+      "back": "まくら",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0295",
+      "front": "sheet",
+      "back": "シーツ、1枚",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0296",
+      "front": "vase",
+      "back": "花びん",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0297",
+      "front": "basket",
+      "back": "かご、バスケット",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0298",
+      "front": "box",
+      "back": "箱",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0299",
+      "front": "bottle",
+      "back": "びん、ボトル",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0300",
+      "front": "candle",
+      "back": "ろうそく",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0301",
+      "front": "furniture",
+      "back": "家具",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": "数えられない名詞"
+    },
+    {
+      "id": "w0302",
+      "front": "toilet",
+      "back": "トイレ、便器",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0303",
+      "front": "shower",
+      "back": "シャワー",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0304",
+      "front": "bathtub",
+      "back": "浴槽",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0305",
+      "front": "fan",
+      "back": "扇風機、うちわ",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0306",
+      "front": "heater",
+      "back": "暖房器具、ヒーター",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0307",
+      "front": "vacuum",
+      "back": "掃除機 (vacuum cleaner)",
+      "category": "家・暮らし",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0308",
+      "front": "trash",
+      "back": "ごみ",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": "米語"
+    },
+    {
+      "id": "w0309",
+      "front": "garbage",
+      "back": "生ごみ、ごみ",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0310",
+      "front": "hallway",
+      "back": "廊下、玄関ホール",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0311",
+      "front": "gate",
+      "back": "門",
+      "category": "家・暮らし",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0312",
+      "front": "fence",
+      "back": "塀、フェンス",
+      "category": "家・暮らし",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0313",
+      "front": "shirt",
+      "back": "シャツ",
+      "category": "衣服・身の回り",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0314",
+      "front": "shoes",
+      "back": "靴",
+      "category": "衣服・身の回り",
+      "difficulty": 1,
+      "hint": "複数形で使う"
+    },
+    {
+      "id": "w0315",
+      "front": "bag",
+      "back": "かばん、袋",
+      "category": "衣服・身の回り",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0316",
+      "front": "hat",
+      "back": "帽子（ふちのある）",
+      "category": "衣服・身の回り",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0317",
+      "front": "cap",
+      "back": "帽子（ふちなし）、キャップ",
+      "category": "衣服・身の回り",
+      "difficulty": 1,
+      "hint": "野球帽など"
+    },
+    {
+      "id": "w0318",
+      "front": "glasses",
+      "back": "眼鏡",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": "複数形で使う"
+    },
+    {
+      "id": "w0319",
+      "front": "wallet",
+      "back": "財布",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0320",
+      "front": "coat",
+      "back": "コート、上着",
+      "category": "衣服・身の回り",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0321",
+      "front": "jacket",
+      "back": "ジャケット、上着",
+      "category": "衣服・身の回り",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0322",
+      "front": "socks",
+      "back": "靴下",
+      "category": "衣服・身の回り",
+      "difficulty": 1,
+      "hint": "複数形で使う"
+    },
+    {
+      "id": "w0323",
+      "front": "pants",
+      "back": "ズボン、パンツ",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": "米国ではズボン"
+    },
+    {
+      "id": "w0324",
+      "front": "skirt",
+      "back": "スカート",
+      "category": "衣服・身の回り",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0325",
+      "front": "dress",
+      "back": "ドレス、ワンピース",
+      "category": "衣服・身の回り",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0326",
+      "front": "sweater",
+      "back": "セーター",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0327",
+      "front": "gloves",
+      "back": "手袋",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": "複数形で使う"
+    },
+    {
+      "id": "w0328",
+      "front": "scarf",
+      "back": "マフラー、スカーフ",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0329",
+      "front": "belt",
+      "back": "ベルト",
+      "category": "衣服・身の回り",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0330",
+      "front": "tie",
+      "back": "ネクタイ、(動)結ぶ",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0331",
+      "front": "boots",
+      "back": "ブーツ、長靴",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": "複数形で使う"
+    },
+    {
+      "id": "w0332",
+      "front": "umbrella",
+      "back": "傘",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0333",
+      "front": "watch",
+      "back": "腕時計、(動)見る",
+      "category": "衣服・身の回り",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0334",
+      "front": "ring",
+      "back": "指輪、(動)鳴る",
+      "category": "衣服・身の回り",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0335",
+      "front": "button",
+      "back": "ボタン",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0336",
+      "front": "pocket",
+      "back": "ポケット",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0337",
+      "front": "jeans",
+      "back": "ジーンズ",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": "複数形で使う"
+    },
+    {
+      "id": "w0338",
+      "front": "shorts",
+      "back": "半ズボン、短パン",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": "複数形で使う"
+    },
+    {
+      "id": "w0339",
+      "front": "clothes",
+      "back": "衣服",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": "発音注意"
+    },
+    {
+      "id": "w0340",
+      "front": "uniform",
+      "back": "制服、ユニフォーム",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0341",
+      "front": "sandals",
+      "back": "サンダル",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": "複数形で使う"
+    },
+    {
+      "id": "w0342",
+      "front": "sneakers",
+      "back": "スニーカー、運動靴",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": "複数形で使う"
+    },
+    {
+      "id": "w0343",
+      "front": "jewelry",
+      "back": "宝飾品、アクセサリー",
+      "category": "衣服・身の回り",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0344",
+      "front": "purse",
+      "back": "ハンドバッグ、財布",
+      "category": "衣服・身の回り",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0345",
+      "front": "sleeve",
+      "back": "そで",
+      "category": "衣服・身の回り",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0346",
+      "front": "collar",
+      "back": "えり",
+      "category": "衣服・身の回り",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0347",
+      "front": "sunglasses",
+      "back": "サングラス",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": "複数形で使う"
+    },
+    {
+      "id": "w0348",
+      "front": "backpack",
+      "back": "リュックサック",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0349",
+      "front": "necklace",
+      "back": "ネックレス",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0350",
+      "front": "raincoat",
+      "back": "レインコート",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0351",
+      "front": "slippers",
+      "back": "スリッパ、室内履き",
+      "category": "衣服・身の回り",
+      "difficulty": 2,
+      "hint": "複数形で使う"
+    },
+    {
+      "id": "w0352",
+      "front": "handkerchief",
+      "back": "ハンカチ",
+      "category": "衣服・身の回り",
+      "difficulty": 3,
+      "hint": "発音・つづり注意"
+    },
+    {
+      "id": "w0353",
+      "front": "time",
+      "back": "時間、時刻",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0354",
+      "front": "day",
+      "back": "日、昼間",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0355",
+      "front": "week",
+      "back": "週",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0356",
+      "front": "month",
+      "back": "月、ひと月",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0357",
+      "front": "year",
+      "back": "年",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0358",
+      "front": "hour",
+      "back": "時間（1時間の単位）",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": "hは発音しない"
+    },
+    {
+      "id": "w0359",
+      "front": "minute",
+      "back": "分",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0360",
+      "front": "second",
+      "back": "秒、(形)2番目の",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0361",
+      "front": "noon",
+      "back": "正午",
+      "category": "時間・日付",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0362",
+      "front": "midnight",
+      "back": "真夜中、午前0時",
+      "category": "時間・日付",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0363",
+      "front": "today",
+      "back": "今日",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0364",
+      "front": "tomorrow",
+      "back": "明日",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0365",
+      "front": "yesterday",
+      "back": "昨日",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0366",
+      "front": "tonight",
+      "back": "今夜",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0367",
+      "front": "now",
+      "back": "今",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0368",
+      "front": "soon",
+      "back": "まもなく、すぐに",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0369",
+      "front": "early",
+      "back": "(形)早い、(副)早く",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0370",
+      "front": "late",
+      "back": "(形)遅い、遅れた",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0371",
+      "front": "daily",
+      "back": "(形)毎日の、(副)毎日",
+      "category": "時間・日付",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0372",
+      "front": "weekly",
+      "back": "(形)毎週の、週1回の",
+      "category": "時間・日付",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0373",
+      "front": "monthly",
+      "back": "(形)毎月の、月1回の",
+      "category": "時間・日付",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0374",
+      "front": "yearly",
+      "back": "(形)毎年の、年1回の",
+      "category": "時間・日付",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0375",
+      "front": "monday",
+      "back": "月曜日",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0376",
+      "front": "tuesday",
+      "back": "火曜日",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0377",
+      "front": "wednesday",
+      "back": "水曜日",
+      "category": "時間・日付",
+      "difficulty": 2,
+      "hint": "dを発音しない"
+    },
+    {
+      "id": "w0378",
+      "front": "thursday",
+      "back": "木曜日",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0379",
+      "front": "friday",
+      "back": "金曜日",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0380",
+      "front": "saturday",
+      "back": "土曜日",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0381",
+      "front": "sunday",
+      "back": "日曜日",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0382",
+      "front": "weekend",
+      "back": "週末",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0383",
+      "front": "weekday",
+      "back": "平日",
+      "category": "時間・日付",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0384",
+      "front": "january",
+      "back": "1月",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0385",
+      "front": "february",
+      "back": "2月",
+      "category": "時間・日付",
+      "difficulty": 2,
+      "hint": "綴りに注意"
+    },
+    {
+      "id": "w0386",
+      "front": "march",
+      "back": "3月、(動)行進する",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0387",
+      "front": "april",
+      "back": "4月",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0388",
+      "front": "may",
+      "back": "5月、(助)〜してよい",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0389",
+      "front": "june",
+      "back": "6月",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0390",
+      "front": "july",
+      "back": "7月",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0391",
+      "front": "august",
+      "back": "8月",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0392",
+      "front": "september",
+      "back": "9月",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0393",
+      "front": "october",
+      "back": "10月",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0394",
+      "front": "november",
+      "back": "11月",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0395",
+      "front": "december",
+      "back": "12月",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0396",
+      "front": "date",
+      "back": "日付、デート",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0397",
+      "front": "calendar",
+      "back": "カレンダー、暦",
+      "category": "時間・日付",
+      "difficulty": 2,
+      "hint": "綴りに注意"
+    },
+    {
+      "id": "w0398",
+      "front": "season",
+      "back": "季節、シーズン",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0399",
+      "front": "holiday",
+      "back": "休日、祝日",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0400",
+      "front": "birthday",
+      "back": "誕生日",
+      "category": "時間・日付",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0401",
+      "front": "one",
+      "back": "1、一つ",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0402",
+      "front": "two",
+      "back": "2、二つ",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0403",
+      "front": "three",
+      "back": "3、三つ",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0404",
+      "front": "four",
+      "back": "4、四つ",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0405",
+      "front": "five",
+      "back": "5、五つ",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0406",
+      "front": "ten",
+      "back": "10、十",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0407",
+      "front": "twenty",
+      "back": "20、二十",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0408",
+      "front": "hundred",
+      "back": "100、百",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": "a hundred / one hundred"
+    },
+    {
+      "id": "w0409",
+      "front": "thousand",
+      "back": "1000、千",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0410",
+      "front": "million",
+      "back": "100万",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0411",
+      "front": "billion",
+      "back": "10億",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0412",
+      "front": "zero",
+      "back": "0、ゼロ",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0413",
+      "front": "first",
+      "back": "1番目の、最初の",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": "序数"
+    },
+    {
+      "id": "w0414",
+      "front": "third",
+      "back": "3番目の",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": "序数"
+    },
+    {
+      "id": "w0415",
+      "front": "half",
+      "back": "半分、2分の1",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0416",
+      "front": "quarter",
+      "back": "4分の1、15分",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0417",
+      "front": "double",
+      "back": "2倍の、(動)2倍にする",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0418",
+      "front": "triple",
+      "back": "3倍の、(動)3倍にする",
+      "category": "数・量",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0419",
+      "front": "single",
+      "back": "単一の、1つの",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0420",
+      "front": "many",
+      "back": "多くの(可算)",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0421",
+      "front": "much",
+      "back": "多くの(不可算)",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0422",
+      "front": "few",
+      "back": "ほとんどない、少しの(可算)",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": "a few=少しある"
+    },
+    {
+      "id": "w0423",
+      "front": "little",
+      "back": "ほとんどない、少しの(不可算)",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": "a little=少しある"
+    },
+    {
+      "id": "w0424",
+      "front": "some",
+      "back": "いくつかの、いくらかの",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0425",
+      "front": "any",
+      "back": "いくつかの、何か",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": "疑問・否定文で"
+    },
+    {
+      "id": "w0426",
+      "front": "all",
+      "back": "すべての、全部",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0427",
+      "front": "none",
+      "back": "何も〜ない",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0428",
+      "front": "more",
+      "back": "より多くの、もっと",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0429",
+      "front": "most",
+      "back": "最も多い、大部分の",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0430",
+      "front": "less",
+      "back": "より少ない(不可算)",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0431",
+      "front": "least",
+      "back": "最も少ない",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": "at least=少なくとも"
+    },
+    {
+      "id": "w0432",
+      "front": "enough",
+      "back": "十分な、十分に",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0433",
+      "front": "several",
+      "back": "いくつかの、数個の",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0434",
+      "front": "plenty",
+      "back": "たくさん、十分な量",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": "plenty of"
+    },
+    {
+      "id": "w0435",
+      "front": "amount",
+      "back": "量、総額",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": "不可算に使う"
+    },
+    {
+      "id": "w0436",
+      "front": "number",
+      "back": "数、番号",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0437",
+      "front": "count",
+      "back": "(動)数える、計算",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0438",
+      "front": "total",
+      "back": "合計、全体の",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0439",
+      "front": "dozen",
+      "back": "1ダース、12個",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0440",
+      "front": "pair",
+      "back": "1対、ひと組",
+      "category": "数・量",
+      "difficulty": 2,
+      "hint": "a pair of"
+    },
+    {
+      "id": "w0441",
+      "front": "both",
+      "back": "両方の",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0442",
+      "front": "each",
+      "back": "それぞれの",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0443",
+      "front": "every",
+      "back": "すべての、毎〜",
+      "category": "数・量",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0444",
+      "front": "station",
+      "back": "駅",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0445",
+      "front": "city",
+      "back": "都市、市",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0446",
+      "front": "town",
+      "back": "町",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0447",
+      "front": "village",
+      "back": "村",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0448",
+      "front": "road",
+      "back": "道路、道",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0449",
+      "front": "street",
+      "back": "通り、街路",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0450",
+      "front": "school",
+      "back": "学校",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0451",
+      "front": "store",
+      "back": "店、商店",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": "米語"
+    },
+    {
+      "id": "w0452",
+      "front": "shop",
+      "back": "店",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": "英語"
+    },
+    {
+      "id": "w0453",
+      "front": "airport",
+      "back": "空港",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0454",
+      "front": "library",
+      "back": "図書館",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0455",
+      "front": "park",
+      "back": "公園",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0456",
+      "front": "bank",
+      "back": "銀行",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0457",
+      "front": "hotel",
+      "back": "ホテル",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0458",
+      "front": "restaurant",
+      "back": "レストラン、飲食店",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0459",
+      "front": "office",
+      "back": "事務所、会社",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0460",
+      "front": "church",
+      "back": "教会",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0461",
+      "front": "museum",
+      "back": "博物館、美術館",
+      "category": "場所・移動",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0462",
+      "front": "market",
+      "back": "市場",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0463",
+      "front": "bridge",
+      "back": "橋",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0464",
+      "front": "corner",
+      "back": "角、隅",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0465",
+      "front": "building",
+      "back": "建物、ビル",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0466",
+      "front": "factory",
+      "back": "工場",
+      "category": "場所・移動",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0467",
+      "front": "farm",
+      "back": "農場",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0468",
+      "front": "beach",
+      "back": "浜辺、ビーチ",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0469",
+      "front": "mountain",
+      "back": "山",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0470",
+      "front": "river",
+      "back": "川",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0471",
+      "front": "lake",
+      "back": "湖",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0472",
+      "front": "sea",
+      "back": "海",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0473",
+      "front": "island",
+      "back": "島",
+      "category": "場所・移動",
+      "difficulty": 2,
+      "hint": "発音注意 b は無音"
+    },
+    {
+      "id": "w0474",
+      "front": "country",
+      "back": "国、田舎",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0475",
+      "front": "world",
+      "back": "世界",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0476",
+      "front": "place",
+      "back": "場所",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0477",
+      "front": "area",
+      "back": "地域、区域",
+      "category": "場所・移動",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0478",
+      "front": "map",
+      "back": "地図",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0479",
+      "front": "address",
+      "back": "住所",
+      "category": "場所・移動",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0480",
+      "front": "left",
+      "back": "左、左の",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0481",
+      "front": "right",
+      "back": "右、右の",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0482",
+      "front": "north",
+      "back": "北",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0483",
+      "front": "south",
+      "back": "南",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0484",
+      "front": "east",
+      "back": "東",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0485",
+      "front": "west",
+      "back": "西",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0486",
+      "front": "near",
+      "back": "近くに、近い",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0487",
+      "front": "far",
+      "back": "遠い、遠くに",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0488",
+      "front": "here",
+      "back": "ここに",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0489",
+      "front": "there",
+      "back": "そこに、あそこに",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0490",
+      "front": "straight",
+      "back": "まっすぐに、まっすぐな",
+      "category": "場所・移動",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0491",
+      "front": "turn",
+      "back": "曲がる、回す",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": "(動)"
+    },
+    {
+      "id": "w0492",
+      "front": "cross",
+      "back": "渡る、横切る",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": "(動)"
+    },
+    {
+      "id": "w0493",
+      "front": "way",
+      "back": "道、方法",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0494",
+      "front": "direction",
+      "back": "方向、方角",
+      "category": "場所・移動",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0495",
+      "front": "distance",
+      "back": "距離",
+      "category": "場所・移動",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0496",
+      "front": "train",
+      "back": "電車、列車",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0497",
+      "front": "bus",
+      "back": "バス",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0498",
+      "front": "car",
+      "back": "車、自動車",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0499",
+      "front": "taxi",
+      "back": "タクシー",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0500",
+      "front": "bike",
+      "back": "自転車、バイク",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0501",
+      "front": "bicycle",
+      "back": "自転車",
+      "category": "場所・移動",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0502",
+      "front": "plane",
+      "back": "飛行機",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0503",
+      "front": "ship",
+      "back": "船",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0504",
+      "front": "boat",
+      "back": "ボート、小舟",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0505",
+      "front": "subway",
+      "back": "地下鉄",
+      "category": "場所・移動",
+      "difficulty": 2,
+      "hint": "米語"
+    },
+    {
+      "id": "w0506",
+      "front": "ticket",
+      "back": "切符、チケット",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0507",
+      "front": "travel",
+      "back": "旅行する、移動する",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": "(動)"
+    },
+    {
+      "id": "w0508",
+      "front": "trip",
+      "back": "旅行、小旅行",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0509",
+      "front": "arrive",
+      "back": "到着する",
+      "category": "場所・移動",
+      "difficulty": 2,
+      "hint": "(動)"
+    },
+    {
+      "id": "w0510",
+      "front": "drive",
+      "back": "運転する",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": "(動)"
+    },
+    {
+      "id": "w0511",
+      "front": "walk",
+      "back": "歩く、散歩",
+      "category": "場所・移動",
+      "difficulty": 1,
+      "hint": "(動)"
+    },
+    {
+      "id": "w0512",
+      "front": "sky",
+      "back": "空",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0513",
+      "front": "sun",
+      "back": "太陽",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0514",
+      "front": "moon",
+      "back": "月",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0515",
+      "front": "star",
+      "back": "星",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0516",
+      "front": "cloud",
+      "back": "雲",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0517",
+      "front": "rain",
+      "back": "雨",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0518",
+      "front": "snow",
+      "back": "雪",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0519",
+      "front": "wind",
+      "back": "風",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0520",
+      "front": "storm",
+      "back": "嵐",
+      "category": "自然・天気",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0521",
+      "front": "thunder",
+      "back": "雷（音）",
+      "category": "自然・天気",
+      "difficulty": 2,
+      "hint": "lightningは稲妻"
+    },
+    {
+      "id": "w0522",
+      "front": "lightning",
+      "back": "稲妻",
+      "category": "自然・天気",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0523",
+      "front": "fog",
+      "back": "霧",
+      "category": "自然・天気",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0524",
+      "front": "rainbow",
+      "back": "虹",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0525",
+      "front": "ocean",
+      "back": "大洋、海",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0526",
+      "front": "hill",
+      "back": "丘",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0527",
+      "front": "valley",
+      "back": "谷",
+      "category": "自然・天気",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0528",
+      "front": "forest",
+      "back": "森",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0529",
+      "front": "tree",
+      "back": "木",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0530",
+      "front": "flower",
+      "back": "花",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0531",
+      "front": "grass",
+      "back": "草、芝生",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0532",
+      "front": "leaf",
+      "back": "葉",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": "複数形はleaves"
+    },
+    {
+      "id": "w0533",
+      "front": "plant",
+      "back": "植物",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0534",
+      "front": "rock",
+      "back": "岩、石",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0535",
+      "front": "stone",
+      "back": "石",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0536",
+      "front": "sand",
+      "back": "砂",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0537",
+      "front": "desert",
+      "back": "砂漠",
+      "category": "自然・天気",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0538",
+      "front": "weather",
+      "back": "天気",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0539",
+      "front": "warm",
+      "back": "暖かい(形)",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0540",
+      "front": "cool",
+      "back": "涼しい(形)",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0541",
+      "front": "sunny",
+      "back": "晴れた(形)",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0542",
+      "front": "cloudy",
+      "back": "曇った(形)",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0543",
+      "front": "rainy",
+      "back": "雨の(形)",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0544",
+      "front": "windy",
+      "back": "風の強い(形)",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0545",
+      "front": "snowy",
+      "back": "雪の(形)",
+      "category": "自然・天気",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0546",
+      "front": "wet",
+      "back": "濡れた(形)",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0547",
+      "front": "dry",
+      "back": "乾いた(形)",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0548",
+      "front": "spring",
+      "back": "春",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": "「ばね」の意味も"
+    },
+    {
+      "id": "w0549",
+      "front": "summer",
+      "back": "夏",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0550",
+      "front": "autumn",
+      "back": "秋",
+      "category": "自然・天気",
+      "difficulty": 2,
+      "hint": "米語はfall"
+    },
+    {
+      "id": "w0551",
+      "front": "winter",
+      "back": "冬",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0552",
+      "front": "heat",
+      "back": "熱、暑さ",
+      "category": "自然・天気",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0553",
+      "front": "shadow",
+      "back": "影",
+      "category": "自然・天気",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0554",
+      "front": "earth",
+      "back": "地球、大地",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0555",
+      "front": "nature",
+      "back": "自然",
+      "category": "自然・天気",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0556",
+      "front": "dog",
+      "back": "犬",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0557",
+      "front": "cat",
+      "back": "猫",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0558",
+      "front": "bird",
+      "back": "鳥",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0559",
+      "front": "horse",
+      "back": "馬",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0560",
+      "front": "cow",
+      "back": "牛(雌牛)",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0561",
+      "front": "pig",
+      "back": "豚",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0562",
+      "front": "sheep",
+      "back": "羊",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": "単複同形"
+    },
+    {
+      "id": "w0563",
+      "front": "rabbit",
+      "back": "うさぎ",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0564",
+      "front": "mouse",
+      "back": "ねずみ",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": "複数 mice"
+    },
+    {
+      "id": "w0565",
+      "front": "bear",
+      "back": "熊",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0566",
+      "front": "lion",
+      "back": "ライオン",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0567",
+      "front": "tiger",
+      "back": "虎",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0568",
+      "front": "elephant",
+      "back": "象",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0569",
+      "front": "monkey",
+      "back": "猿",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0570",
+      "front": "duck",
+      "back": "あひる、かも",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0571",
+      "front": "frog",
+      "back": "かえる",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0572",
+      "front": "snake",
+      "back": "蛇",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0573",
+      "front": "insect",
+      "back": "昆虫、虫",
+      "category": "動物・生き物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0574",
+      "front": "bee",
+      "back": "蜂、ミツバチ",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0575",
+      "front": "ant",
+      "back": "あり",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0576",
+      "front": "spider",
+      "back": "くも",
+      "category": "動物・生き物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0577",
+      "front": "butterfly",
+      "back": "ちょう",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0578",
+      "front": "fox",
+      "back": "きつね",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0579",
+      "front": "wolf",
+      "back": "おおかみ",
+      "category": "動物・生き物",
+      "difficulty": 2,
+      "hint": "複数 wolves"
+    },
+    {
+      "id": "w0580",
+      "front": "deer",
+      "back": "鹿",
+      "category": "動物・生き物",
+      "difficulty": 2,
+      "hint": "単複同形"
+    },
+    {
+      "id": "w0581",
+      "front": "goat",
+      "back": "やぎ",
+      "category": "動物・生き物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0582",
+      "front": "turtle",
+      "back": "亀",
+      "category": "動物・生き物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0583",
+      "front": "dolphin",
+      "back": "いるか",
+      "category": "動物・生き物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0584",
+      "front": "whale",
+      "back": "くじら",
+      "category": "動物・生き物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0585",
+      "front": "shark",
+      "back": "さめ",
+      "category": "動物・生き物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0586",
+      "front": "penguin",
+      "back": "ペンギン",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0587",
+      "front": "owl",
+      "back": "ふくろう",
+      "category": "動物・生き物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0588",
+      "front": "eagle",
+      "back": "わし",
+      "category": "動物・生き物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0589",
+      "front": "animal",
+      "back": "動物",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": "総称"
+    },
+    {
+      "id": "w0590",
+      "front": "pet",
+      "back": "ペット、愛玩動物",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0591",
+      "front": "tail",
+      "back": "しっぽ、尾",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0592",
+      "front": "wing",
+      "back": "翼、羽",
+      "category": "動物・生き物",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0593",
+      "front": "feather",
+      "back": "羽毛、羽根",
+      "category": "動物・生き物",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0594",
+      "front": "work",
+      "back": "仕事、働く(動)",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0595",
+      "front": "job",
+      "back": "仕事、職",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": "個別の職・職業"
+    },
+    {
+      "id": "w0596",
+      "front": "company",
+      "back": "会社、企業",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0597",
+      "front": "meeting",
+      "back": "会議、打ち合わせ",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0598",
+      "front": "team",
+      "back": "チーム",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0599",
+      "front": "project",
+      "back": "プロジェクト、企画",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0600",
+      "front": "task",
+      "back": "仕事、作業、課題",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0601",
+      "front": "deadline",
+      "back": "締め切り、期限",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0602",
+      "front": "schedule",
+      "back": "予定、計画(表)",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0603",
+      "front": "salary",
+      "back": "給料、給与",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": "月給・固定給"
+    },
+    {
+      "id": "w0604",
+      "front": "money",
+      "back": "お金",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0605",
+      "front": "pay",
+      "back": "支払う(動)、給料",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0606",
+      "front": "price",
+      "back": "値段、価格",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0607",
+      "front": "cost",
+      "back": "費用、かかる(動)",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0608",
+      "front": "client",
+      "back": "顧客、依頼人",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": "取引先・依頼者"
+    },
+    {
+      "id": "w0609",
+      "front": "business",
+      "back": "事業、商売、ビジネス",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0610",
+      "front": "staff",
+      "back": "職員、スタッフ",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0611",
+      "front": "interview",
+      "back": "面接、インタビュー",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0612",
+      "front": "email",
+      "back": "メール、電子メール",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0613",
+      "front": "report",
+      "back": "報告(書)、報告する(動)",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0614",
+      "front": "plan",
+      "back": "計画、計画する(動)",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0615",
+      "front": "goal",
+      "back": "目標、ゴール",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0616",
+      "front": "break",
+      "back": "休憩、壊す(動)",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": "coffee break の break"
+    },
+    {
+      "id": "w0617",
+      "front": "study",
+      "back": "勉強する(動)、研究",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0618",
+      "front": "class",
+      "back": "授業、クラス",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0619",
+      "front": "lesson",
+      "back": "授業、レッスン、課",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0620",
+      "front": "homework",
+      "back": "宿題",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0621",
+      "front": "test",
+      "back": "テスト、試験",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0622",
+      "front": "exam",
+      "back": "試験",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": "examination の略"
+    },
+    {
+      "id": "w0623",
+      "front": "grade",
+      "back": "成績、学年、評価する(動)",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0624",
+      "front": "subject",
+      "back": "科目、話題",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0625",
+      "front": "learn",
+      "back": "学ぶ、習う(動)",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0626",
+      "front": "teach",
+      "back": "教える(動)",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0627",
+      "front": "book",
+      "back": "本、予約する(動)",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0628",
+      "front": "pen",
+      "back": "ペン",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0629",
+      "front": "notebook",
+      "back": "ノート",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0630",
+      "front": "question",
+      "back": "質問、問題",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0631",
+      "front": "answer",
+      "back": "答え、答える(動)",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0632",
+      "front": "college",
+      "back": "大学、単科大学",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0633",
+      "front": "university",
+      "back": "大学、総合大学",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0634",
+      "front": "degree",
+      "back": "学位、(温)度",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0635",
+      "front": "knowledge",
+      "back": "知識",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0636",
+      "front": "experience",
+      "back": "経験、経験する(動)",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0637",
+      "front": "skill",
+      "back": "技能、スキル",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0638",
+      "front": "career",
+      "back": "経歴、キャリア、職業",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0639",
+      "front": "effort",
+      "back": "努力",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0640",
+      "front": "result",
+      "back": "結果",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0641",
+      "front": "success",
+      "back": "成功",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0642",
+      "front": "problem",
+      "back": "問題",
+      "category": "仕事・学校",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0643",
+      "front": "happy",
+      "back": "幸せな、うれしい",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0644",
+      "front": "sad",
+      "back": "悲しい",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0645",
+      "front": "angry",
+      "back": "怒った",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": "get angry で「怒る」"
+    },
+    {
+      "id": "w0646",
+      "front": "kind",
+      "back": "親切な、優しい",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0647",
+      "front": "afraid",
+      "back": "恐れて、こわがって",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": "be afraid of ~"
+    },
+    {
+      "id": "w0648",
+      "front": "glad",
+      "back": "うれしい、喜んで",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0649",
+      "front": "surprised",
+      "back": "驚いた",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": "be surprised at ~"
+    },
+    {
+      "id": "w0650",
+      "front": "excited",
+      "back": "わくわくした、興奮した",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0651",
+      "front": "bored",
+      "back": "退屈した",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": "boring(退屈な)と区別"
+    },
+    {
+      "id": "w0652",
+      "front": "worried",
+      "back": "心配した",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": "worry の形容詞形"
+    },
+    {
+      "id": "w0653",
+      "front": "nervous",
+      "back": "緊張した、神経質な",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0654",
+      "front": "scared",
+      "back": "おびえた、こわがった",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0655",
+      "front": "shy",
+      "back": "内気な、恥ずかしがりの",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0656",
+      "front": "proud",
+      "back": "誇りに思う",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": "be proud of ~"
+    },
+    {
+      "id": "w0657",
+      "front": "lonely",
+      "back": "さびしい、孤独な",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0658",
+      "front": "friendly",
+      "back": "親しみやすい、友好的な",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0659",
+      "front": "gentle",
+      "back": "穏やかな、優しい",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0660",
+      "front": "honest",
+      "back": "正直な",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": "h は発音しない"
+    },
+    {
+      "id": "w0661",
+      "front": "brave",
+      "back": "勇敢な",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0662",
+      "front": "polite",
+      "back": "礼儀正しい",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0663",
+      "front": "cheerful",
+      "back": "陽気な、機嫌のよい",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0664",
+      "front": "calm",
+      "back": "冷静な、穏やかな",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": "l は発音しない"
+    },
+    {
+      "id": "w0665",
+      "front": "upset",
+      "back": "動揺した、腹を立てた",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0666",
+      "front": "jealous",
+      "back": "嫉妬した、ねたんだ",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0667",
+      "front": "confident",
+      "back": "自信のある",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0668",
+      "front": "curious",
+      "back": "好奇心の強い",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": "be curious about ~"
+    },
+    {
+      "id": "w0669",
+      "front": "serious",
+      "back": "まじめな、真剣な",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0670",
+      "front": "funny",
+      "back": "おもしろい、こっけいな",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0671",
+      "front": "clever",
+      "back": "賢い、利口な",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0672",
+      "front": "selfish",
+      "back": "わがままな、利己的な",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0673",
+      "front": "lazy",
+      "back": "怠惰な、なまけ者の",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0674",
+      "front": "patient",
+      "back": "忍耐強い／(名)患者",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0675",
+      "front": "generous",
+      "back": "気前のよい、寛大な",
+      "category": "感情・性格",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0676",
+      "front": "strict",
+      "back": "厳しい、厳格な",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0677",
+      "front": "rude",
+      "back": "無礼な、失礼な",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0678",
+      "front": "smart",
+      "back": "賢い、利口な",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0679",
+      "front": "wise",
+      "back": "賢明な、思慮深い",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0680",
+      "front": "quiet",
+      "back": "静かな、無口な",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0681",
+      "front": "active",
+      "back": "活発な、積極的な",
+      "category": "感情・性格",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0682",
+      "front": "pleased",
+      "back": "満足した、喜んだ",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": "be pleased with ~"
+    },
+    {
+      "id": "w0683",
+      "front": "disappointed",
+      "back": "がっかりした、失望した",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0684",
+      "front": "embarrassed",
+      "back": "恥ずかしい、ばつの悪い",
+      "category": "感情・性格",
+      "difficulty": 3,
+      "hint": "綴り注意(r,s 各2)"
+    },
+    {
+      "id": "w0685",
+      "front": "comfortable",
+      "back": "快適な、心地よい",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0686",
+      "front": "relaxed",
+      "back": "くつろいだ、リラックスした",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0687",
+      "front": "thankful",
+      "back": "感謝している",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0688",
+      "front": "grateful",
+      "back": "感謝している、ありがたく思う",
+      "category": "感情・性格",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0689",
+      "front": "anxious",
+      "back": "不安な、心配して",
+      "category": "感情・性格",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0690",
+      "front": "confused",
+      "back": "混乱した、困惑した",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0691",
+      "front": "frightened",
+      "back": "おびえた、ぎょっとした",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0692",
+      "front": "cruel",
+      "back": "残酷な、冷酷な",
+      "category": "感情・性格",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0693",
+      "front": "foolish",
+      "back": "愚かな、ばかげた",
+      "category": "感情・性格",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0694",
+      "front": "go",
+      "back": "行く",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "went/gone"
+    },
+    {
+      "id": "w0695",
+      "front": "come",
+      "back": "来る",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "came/come"
+    },
+    {
+      "id": "w0696",
+      "front": "see",
+      "back": "見る、会う",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "saw/seen"
+    },
+    {
+      "id": "w0697",
+      "front": "look",
+      "back": "見る、(～に)見える",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "look at"
+    },
+    {
+      "id": "w0698",
+      "front": "make",
+      "back": "作る、～させる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "made/made"
+    },
+    {
+      "id": "w0699",
+      "front": "take",
+      "back": "取る、持っていく、(時間が)かかる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "took/taken"
+    },
+    {
+      "id": "w0700",
+      "front": "give",
+      "back": "与える、あげる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "gave/given"
+    },
+    {
+      "id": "w0701",
+      "front": "get",
+      "back": "手に入れる、～になる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "got/gotten"
+    },
+    {
+      "id": "w0702",
+      "front": "want",
+      "back": "欲しい、～したい",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0703",
+      "front": "think",
+      "back": "思う、考える",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "thought"
+    },
+    {
+      "id": "w0704",
+      "front": "use",
+      "back": "使う",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0705",
+      "front": "find",
+      "back": "見つける",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "found/found"
+    },
+    {
+      "id": "w0706",
+      "front": "have",
+      "back": "持っている、～がある",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "had/had"
+    },
+    {
+      "id": "w0707",
+      "front": "do",
+      "back": "する、行う",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "did/done"
+    },
+    {
+      "id": "w0708",
+      "front": "say",
+      "back": "言う",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "said/said"
+    },
+    {
+      "id": "w0709",
+      "front": "tell",
+      "back": "伝える、教える",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "told/told"
+    },
+    {
+      "id": "w0710",
+      "front": "talk",
+      "back": "話す、しゃべる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "talk to"
+    },
+    {
+      "id": "w0711",
+      "front": "speak",
+      "back": "話す、(言語を)話す",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "spoke/spoken"
+    },
+    {
+      "id": "w0712",
+      "front": "ask",
+      "back": "尋ねる、頼む",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0713",
+      "front": "call",
+      "back": "呼ぶ、電話する",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0714",
+      "front": "play",
+      "back": "遊ぶ、(スポーツを)する、演奏する",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0715",
+      "front": "run",
+      "back": "走る、経営する",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "ran/run"
+    },
+    {
+      "id": "w0716",
+      "front": "sit",
+      "back": "座る",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "sat/sat"
+    },
+    {
+      "id": "w0717",
+      "front": "stand",
+      "back": "立つ、我慢する",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "stood"
+    },
+    {
+      "id": "w0718",
+      "front": "sleep",
+      "back": "眠る",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "slept"
+    },
+    {
+      "id": "w0719",
+      "front": "read",
+      "back": "読む",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "read/read"
+    },
+    {
+      "id": "w0720",
+      "front": "write",
+      "back": "書く",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "wrote/written"
+    },
+    {
+      "id": "w0721",
+      "front": "open",
+      "back": "開ける、開く",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0722",
+      "front": "close",
+      "back": "閉める、閉じる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0723",
+      "front": "start",
+      "back": "始める、始まる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0724",
+      "front": "stop",
+      "back": "止める、やめる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0725",
+      "front": "begin",
+      "back": "始める、始まる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "began/begun"
+    },
+    {
+      "id": "w0726",
+      "front": "end",
+      "back": "終わる、終える",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0727",
+      "front": "finish",
+      "back": "終える、終わる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0728",
+      "front": "buy",
+      "back": "買う",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "bought"
+    },
+    {
+      "id": "w0729",
+      "front": "sell",
+      "back": "売る",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "sold/sold"
+    },
+    {
+      "id": "w0730",
+      "front": "send",
+      "back": "送る",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "sent/sent"
+    },
+    {
+      "id": "w0731",
+      "front": "bring",
+      "back": "持ってくる、連れてくる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "brought"
+    },
+    {
+      "id": "w0732",
+      "front": "carry",
+      "back": "運ぶ、持ち運ぶ",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0733",
+      "front": "hold",
+      "back": "持つ、抱える、開催する",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": "held/held"
+    },
+    {
+      "id": "w0734",
+      "front": "put",
+      "back": "置く",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "put/put"
+    },
+    {
+      "id": "w0735",
+      "front": "keep",
+      "back": "保つ、～し続ける",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "kept/kept"
+    },
+    {
+      "id": "w0736",
+      "front": "leave",
+      "back": "去る、出発する、置いていく",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "left/left"
+    },
+    {
+      "id": "w0737",
+      "front": "stay",
+      "back": "とどまる、滞在する",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0738",
+      "front": "live",
+      "back": "住む、生きる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0739",
+      "front": "die",
+      "back": "死ぬ",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0740",
+      "front": "help",
+      "back": "助ける、手伝う",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0741",
+      "front": "need",
+      "back": "必要とする",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0742",
+      "front": "try",
+      "back": "試す、努力する",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0743",
+      "front": "like",
+      "back": "好む、好き",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0744",
+      "front": "love",
+      "back": "愛する、大好き",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0745",
+      "front": "hate",
+      "back": "嫌う、ひどく嫌い",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0746",
+      "front": "hope",
+      "back": "望む、願う",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0747",
+      "front": "wish",
+      "back": "願う、(～ならいいのに)と思う",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0748",
+      "front": "feel",
+      "back": "感じる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "felt/felt"
+    },
+    {
+      "id": "w0749",
+      "front": "hear",
+      "back": "聞こえる、聞く",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "heard"
+    },
+    {
+      "id": "w0750",
+      "front": "listen",
+      "back": "(注意して)聞く",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "listen to"
+    },
+    {
+      "id": "w0751",
+      "front": "remember",
+      "back": "覚えている、思い出す",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0752",
+      "front": "forget",
+      "back": "忘れる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "forgot/forgotten"
+    },
+    {
+      "id": "w0753",
+      "front": "believe",
+      "back": "信じる",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0754",
+      "front": "mean",
+      "back": "意味する",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": "meant/meant"
+    },
+    {
+      "id": "w0755",
+      "front": "show",
+      "back": "見せる、示す",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "showed/shown"
+    },
+    {
+      "id": "w0756",
+      "front": "move",
+      "back": "動く、動かす、引っ越す",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0757",
+      "front": "change",
+      "back": "変える、変わる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0758",
+      "front": "wait",
+      "back": "待つ",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "wait for"
+    },
+    {
+      "id": "w0759",
+      "front": "ride",
+      "back": "乗る",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "rode/ridden"
+    },
+    {
+      "id": "w0760",
+      "front": "fly",
+      "back": "飛ぶ、飛行機で行く",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "flew/flown"
+    },
+    {
+      "id": "w0761",
+      "front": "swim",
+      "back": "泳ぐ",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "swam/swum"
+    },
+    {
+      "id": "w0762",
+      "front": "wash",
+      "back": "洗う",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0763",
+      "front": "clean",
+      "back": "掃除する、きれいにする",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0764",
+      "front": "wear",
+      "back": "着ている、身につけている",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "wore/worn"
+    },
+    {
+      "id": "w0765",
+      "front": "build",
+      "back": "建てる、築く",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "built/built"
+    },
+    {
+      "id": "w0766",
+      "front": "cut",
+      "back": "切る",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "cut/cut"
+    },
+    {
+      "id": "w0767",
+      "front": "throw",
+      "back": "投げる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "threw/thrown"
+    },
+    {
+      "id": "w0768",
+      "front": "catch",
+      "back": "捕まえる、(乗り物に)間に合う",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "caught"
+    },
+    {
+      "id": "w0769",
+      "front": "win",
+      "back": "勝つ、勝ち取る",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "won/won"
+    },
+    {
+      "id": "w0770",
+      "front": "lose",
+      "back": "失う、負ける",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "lost/lost"
+    },
+    {
+      "id": "w0771",
+      "front": "choose",
+      "back": "選ぶ",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": "chose/chosen"
+    },
+    {
+      "id": "w0772",
+      "front": "decide",
+      "back": "決める、決定する",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0773",
+      "front": "happen",
+      "back": "起こる、生じる",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0774",
+      "front": "become",
+      "back": "～になる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "became/become"
+    },
+    {
+      "id": "w0775",
+      "front": "seem",
+      "back": "～のように思える",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0776",
+      "front": "let",
+      "back": "～させる、許す",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "let/let"
+    },
+    {
+      "id": "w0777",
+      "front": "check",
+      "back": "確認する、調べる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0778",
+      "front": "enjoy",
+      "back": "楽しむ",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0779",
+      "front": "visit",
+      "back": "訪れる、訪問する",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0780",
+      "front": "return",
+      "back": "戻る、返す",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0781",
+      "front": "join",
+      "back": "加わる、参加する",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0782",
+      "front": "pick",
+      "back": "選ぶ、摘む、(pick upで)拾う",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "pick up"
+    },
+    {
+      "id": "w0783",
+      "front": "smile",
+      "back": "ほほえむ",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0784",
+      "front": "cry",
+      "back": "泣く、叫ぶ",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0785",
+      "front": "big",
+      "back": "大きい",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0786",
+      "front": "small",
+      "back": "小さい",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0787",
+      "front": "bad",
+      "back": "悪い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0788",
+      "front": "new",
+      "back": "新しい",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0789",
+      "front": "old",
+      "back": "古い、年取った",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0790",
+      "front": "fast",
+      "back": "速い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0791",
+      "front": "slow",
+      "back": "遅い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0792",
+      "front": "long",
+      "back": "長い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0793",
+      "front": "short",
+      "back": "短い、背が低い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0794",
+      "front": "tall",
+      "back": "背が高い、(建物が)高い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0795",
+      "front": "high",
+      "back": "高い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": "位置・高さ"
+    },
+    {
+      "id": "w0796",
+      "front": "low",
+      "back": "低い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0797",
+      "front": "easy",
+      "back": "簡単な",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0798",
+      "front": "hard",
+      "back": "難しい、固い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0799",
+      "front": "difficult",
+      "back": "難しい",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0800",
+      "front": "important",
+      "back": "重要な",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0801",
+      "front": "beautiful",
+      "back": "美しい",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0802",
+      "front": "pretty",
+      "back": "かわいい、(副)かなり",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0803",
+      "front": "ugly",
+      "back": "醜い",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0804",
+      "front": "dirty",
+      "back": "汚い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0805",
+      "front": "young",
+      "back": "若い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0806",
+      "front": "rich",
+      "back": "裕福な",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0807",
+      "front": "poor",
+      "back": "貧しい、かわいそうな",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0808",
+      "front": "strong",
+      "back": "強い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0809",
+      "front": "weak",
+      "back": "弱い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0810",
+      "front": "heavy",
+      "back": "重い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0811",
+      "front": "full",
+      "back": "いっぱいの、満腹の",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0812",
+      "front": "empty",
+      "back": "空の",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0813",
+      "front": "busy",
+      "back": "忙しい",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0814",
+      "front": "free",
+      "back": "自由な、無料の、暇な",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0815",
+      "front": "wrong",
+      "back": "間違った",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0816",
+      "front": "true",
+      "back": "本当の",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0817",
+      "front": "real",
+      "back": "本当の、現実の",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0818",
+      "front": "same",
+      "back": "同じ",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0819",
+      "front": "different",
+      "back": "異なる、違う",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0820",
+      "front": "famous",
+      "back": "有名な",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0821",
+      "front": "interesting",
+      "back": "面白い、興味深い",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0822",
+      "front": "boring",
+      "back": "退屈な",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0823",
+      "front": "ready",
+      "back": "準備ができた",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0824",
+      "front": "loud",
+      "back": "(音が)大きい、うるさい",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0825",
+      "front": "dark",
+      "back": "暗い",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0826",
+      "front": "bright",
+      "back": "明るい、輝いた",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0827",
+      "front": "thick",
+      "back": "厚い、太い",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0828",
+      "front": "thin",
+      "back": "薄い、細い",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0829",
+      "front": "wide",
+      "back": "広い、幅の広い",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0830",
+      "front": "narrow",
+      "back": "狭い、幅の狭い",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0831",
+      "front": "deep",
+      "back": "深い",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0832",
+      "front": "always",
+      "back": "いつも",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": "頻度"
+    },
+    {
+      "id": "w0833",
+      "front": "often",
+      "back": "しばしば、よく",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": "頻度"
+    },
+    {
+      "id": "w0834",
+      "front": "usually",
+      "back": "たいてい、普通は",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": "頻度"
+    },
+    {
+      "id": "w0835",
+      "front": "sometimes",
+      "back": "ときどき",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": "頻度"
+    },
+    {
+      "id": "w0836",
+      "front": "never",
+      "back": "決して〜ない",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": "頻度"
+    },
+    {
+      "id": "w0837",
+      "front": "very",
+      "back": "とても",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": "程度"
+    },
+    {
+      "id": "w0838",
+      "front": "too",
+      "back": "〜すぎる、〜もまた",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0839",
+      "front": "so",
+      "back": "とても、だから",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0840",
+      "front": "quite",
+      "back": "かなり、まったく",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0841",
+      "front": "almost",
+      "back": "ほとんど、もう少しで",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0842",
+      "front": "only",
+      "back": "〜だけ、ただ",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0843",
+      "front": "just",
+      "back": "ちょうど、ただ〜だけ",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0844",
+      "front": "together",
+      "back": "一緒に",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0845",
+      "front": "push",
+      "back": "押す",
+      "category": "ものの動き・状態",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0846",
+      "front": "pull",
+      "back": "引く、引っ張る",
+      "category": "ものの動き・状態",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0847",
+      "front": "fix",
+      "back": "直す、修理する",
+      "category": "ものの動き・状態",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0848",
+      "front": "continue",
+      "back": "続ける、続く",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0849",
+      "front": "add",
+      "back": "加える、足す",
+      "category": "ものの動き・状態",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0850",
+      "front": "drop",
+      "back": "落とす、落ちる",
+      "category": "ものの動き・状態",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0851",
+      "front": "shake",
+      "back": "振る、揺れる",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "shake-shook-shaken"
+    },
+    {
+      "id": "w0852",
+      "front": "fill",
+      "back": "満たす、いっぱいにする",
+      "category": "ものの動き・状態",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0853",
+      "front": "unlock",
+      "back": "鍵を開ける",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0854",
+      "front": "hang",
+      "back": "掛ける、ぶら下げる",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "hang-hung-hung"
+    },
+    {
+      "id": "w0855",
+      "front": "pour",
+      "back": "注ぐ",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0856",
+      "front": "press",
+      "back": "押す、押さえる",
+      "category": "ものの動き・状態",
+      "difficulty": 1,
+      "hint": "ボタンをpress"
+    },
+    {
+      "id": "w0857",
+      "front": "bend",
+      "back": "曲げる、曲がる",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "bend-bent-bent"
+    },
+    {
+      "id": "w0858",
+      "front": "slide",
+      "back": "滑る、滑らせる",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0859",
+      "front": "spread",
+      "back": "広げる、広がる",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "spread-spread-spread"
+    },
+    {
+      "id": "w0860",
+      "front": "wrap",
+      "back": "包む、巻く",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0861",
+      "front": "melt",
+      "back": "溶ける、溶かす",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0862",
+      "front": "burn",
+      "back": "燃える、焼く",
+      "category": "ものの動き・状態",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0863",
+      "front": "freeze",
+      "back": "凍る、凍らせる",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "freeze-froze-frozen"
+    },
+    {
+      "id": "w0864",
+      "front": "boil",
+      "back": "沸かす、沸騰する",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0865",
+      "front": "rise",
+      "back": "上がる、昇る",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "rise-rose-risen 自動詞"
+    },
+    {
+      "id": "w0866",
+      "front": "raise",
+      "back": "上げる、持ち上げる",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "他動詞"
+    },
+    {
+      "id": "w0867",
+      "front": "lower",
+      "back": "下げる",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0868",
+      "front": "connect",
+      "back": "つなぐ、接続する",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0869",
+      "front": "separate",
+      "back": "分ける、離す",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0870",
+      "front": "repair",
+      "back": "修理する",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "fixより硬い語"
+    },
+    {
+      "id": "w0871",
+      "front": "remain",
+      "back": "残る、～のままでいる",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0872",
+      "front": "settle",
+      "back": "落ち着く、解決する",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0873",
+      "front": "phone",
+      "back": "電話",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": "telephone の短縮形"
+    },
+    {
+      "id": "w0874",
+      "front": "smartphone",
+      "back": "スマートフォン",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0875",
+      "front": "computer",
+      "back": "コンピューター",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0876",
+      "front": "laptop",
+      "back": "ノートパソコン",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": "膝の上 lap"
+    },
+    {
+      "id": "w0877",
+      "front": "internet",
+      "back": "インターネット",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0878",
+      "front": "camera",
+      "back": "カメラ",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0879",
+      "front": "website",
+      "back": "ウェブサイト",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0880",
+      "front": "screen",
+      "back": "画面、スクリーン",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0881",
+      "front": "battery",
+      "back": "電池、バッテリー",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0882",
+      "front": "charger",
+      "back": "充電器",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": "charge から"
+    },
+    {
+      "id": "w0883",
+      "front": "keyboard",
+      "back": "キーボード",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0884",
+      "front": "printer",
+      "back": "プリンター、印刷機",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0885",
+      "front": "password",
+      "back": "パスワード",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0886",
+      "front": "message",
+      "back": "メッセージ、伝言",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0887",
+      "front": "app",
+      "back": "アプリ",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": "application の短縮"
+    },
+    {
+      "id": "w0888",
+      "front": "file",
+      "back": "ファイル、書類",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0889",
+      "front": "download",
+      "back": "(動)ダウンロードする",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0890",
+      "front": "upload",
+      "back": "(動)アップロードする",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0891",
+      "front": "network",
+      "back": "ネットワーク、通信網",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0892",
+      "front": "wireless",
+      "back": "(形)無線の",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": "wire=線がない"
+    },
+    {
+      "id": "w0893",
+      "front": "headphone",
+      "back": "ヘッドホン",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": "通常は複数形"
+    },
+    {
+      "id": "w0894",
+      "front": "speaker",
+      "back": "スピーカー、話し手",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0895",
+      "front": "television",
+      "back": "テレビ",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": "略してTV"
+    },
+    {
+      "id": "w0896",
+      "front": "radio",
+      "back": "ラジオ",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0897",
+      "front": "cable",
+      "back": "ケーブル、電線",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0898",
+      "front": "device",
+      "back": "機器、装置",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0899",
+      "front": "data",
+      "back": "データ",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0900",
+      "front": "video",
+      "back": "動画、ビデオ",
+      "category": "IT・身近な道具",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0901",
+      "front": "in",
+      "back": "〜の中に、〜に",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "場所・期間の内側"
+    },
+    {
+      "id": "w0902",
+      "front": "on",
+      "back": "〜の上に、〜に接して",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "接触している面"
+    },
+    {
+      "id": "w0903",
+      "front": "at",
+      "back": "〜で、〜に（地点・時刻）",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "一点を指す"
+    },
+    {
+      "id": "w0904",
+      "front": "with",
+      "back": "〜と一緒に、〜を使って",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "同伴・手段"
+    },
+    {
+      "id": "w0905",
+      "front": "for",
+      "back": "〜のために、〜の間",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "目的・期間"
+    },
+    {
+      "id": "w0906",
+      "front": "to",
+      "back": "〜へ、〜に（方向）",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "到達点・方向"
+    },
+    {
+      "id": "w0907",
+      "front": "from",
+      "back": "〜から",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "起点"
+    },
+    {
+      "id": "w0908",
+      "front": "of",
+      "back": "〜の",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "所属・関連"
+    },
+    {
+      "id": "w0909",
+      "front": "by",
+      "back": "〜によって、〜のそばに",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 2,
+      "hint": "手段・近接"
+    },
+    {
+      "id": "w0910",
+      "front": "about",
+      "back": "〜について、約〜",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "話題・おおよそ"
+    },
+    {
+      "id": "w0911",
+      "front": "into",
+      "back": "〜の中へ",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 2,
+      "hint": "内側への移動"
+    },
+    {
+      "id": "w0912",
+      "front": "over",
+      "back": "〜の上方に、〜を超えて",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 2,
+      "hint": "離れた上・超過"
+    },
+    {
+      "id": "w0913",
+      "front": "under",
+      "back": "〜の下に",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "真下"
+    },
+    {
+      "id": "w0914",
+      "front": "between",
+      "back": "〜の間に（2つの間）",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 2,
+      "hint": "2者の間"
+    },
+    {
+      "id": "w0915",
+      "front": "among",
+      "back": "〜の間に（3つ以上）",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 2,
+      "hint": "3者以上の中"
+    },
+    {
+      "id": "w0916",
+      "front": "during",
+      "back": "〜の間ずっと",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 2,
+      "hint": "特定期間中"
+    },
+    {
+      "id": "w0917",
+      "front": "without",
+      "back": "〜なしで",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 2,
+      "hint": "withの否定"
+    },
+    {
+      "id": "w0918",
+      "front": "and",
+      "back": "〜と、そして",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "並列・追加"
+    },
+    {
+      "id": "w0919",
+      "front": "but",
+      "back": "しかし、〜だが",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "逆接"
+    },
+    {
+      "id": "w0920",
+      "front": "or",
+      "back": "または、あるいは",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "選択"
+    },
+    {
+      "id": "w0921",
+      "front": "because",
+      "back": "〜だから、なぜなら",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "理由"
+    },
+    {
+      "id": "w0922",
+      "front": "if",
+      "back": "もし〜なら",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "条件"
+    },
+    {
+      "id": "w0923",
+      "front": "when",
+      "back": "〜のとき、いつ",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "時を表す"
+    },
+    {
+      "id": "w0924",
+      "front": "while",
+      "back": "〜する間、〜だが一方",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 2,
+      "hint": "同時・対比"
+    },
+    {
+      "id": "w0925",
+      "front": "although",
+      "back": "〜だけれども",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 3,
+      "hint": "譲歩"
+    },
+    {
+      "id": "w0926",
+      "front": "this",
+      "back": "これ、この",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "近いものを指す"
+    },
+    {
+      "id": "w0927",
+      "front": "that",
+      "back": "あれ、その、〜ということ",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "遠い指示・接続"
+    },
+    {
+      "id": "w0928",
+      "front": "these",
+      "back": "これら、これらの",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "thisの複数"
+    },
+    {
+      "id": "w0929",
+      "front": "those",
+      "back": "あれら、あれらの",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "thatの複数"
+    },
+    {
+      "id": "w0930",
+      "front": "it",
+      "back": "それ（は・を）",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "前出の物を指す"
+    },
+    {
+      "id": "w0931",
+      "front": "they",
+      "back": "彼ら（は）、それら（は）",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 1,
+      "hint": "複数の代名詞"
+    },
+    {
+      "id": "w0932",
+      "front": "which",
+      "back": "どれ、〜するところの",
+      "category": "前置詞・接続・代名詞",
+      "difficulty": 2,
+      "hint": "疑問・関係代名詞"
+    },
+    {
+      "id": "w0933",
+      "front": "borrow",
+      "back": "借りる",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "lend(貸す)の逆"
+    },
+    {
+      "id": "w0934",
+      "front": "climb",
+      "back": "登る",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "bの発音はしない"
+    },
+    {
+      "id": "w0935",
+      "front": "cover",
+      "back": "覆う、カバーする",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0936",
+      "front": "earn",
+      "back": "稼ぐ、得る",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": "お金や評価を得る"
+    },
+    {
+      "id": "w0937",
+      "front": "hide",
+      "back": "隠す、隠れる",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": "hide-hid-hidden"
+    },
+    {
+      "id": "w0938",
+      "front": "hurry",
+      "back": "急ぐ",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": "hurry up で「急いで」"
+    },
+    {
+      "id": "w0939",
+      "front": "jump",
+      "back": "跳ぶ、ジャンプする",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0940",
+      "front": "kick",
+      "back": "蹴る",
+      "category": "基本動詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0941",
+      "front": "knock",
+      "back": "ノックする、たたく",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": "kは発音しない"
+    },
+    {
+      "id": "w0942",
+      "front": "lift",
+      "back": "持ち上げる",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0943",
+      "front": "repeat",
+      "back": "繰り返す",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0944",
+      "front": "shout",
+      "back": "叫ぶ",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0945",
+      "front": "solve",
+      "back": "解く、解決する",
+      "category": "基本動詞",
+      "difficulty": 2,
+      "hint": "問題を解決する"
+    },
+    {
+      "id": "w0946",
+      "front": "weigh",
+      "back": "重さを量る、重さがある",
+      "category": "基本動詞",
+      "difficulty": 3,
+      "hint": "ghは発音しない"
+    },
+    {
+      "id": "w0947",
+      "front": "noisy",
+      "back": "うるさい、騒がしい",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": "noise(騒音)の形容詞"
+    },
+    {
+      "id": "w0948",
+      "front": "convenient",
+      "back": "便利な、都合のよい",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": "反対はinconvenient"
+    },
+    {
+      "id": "w0949",
+      "front": "sharp",
+      "back": "鋭い、よく切れる",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": "反対はdull/blunt"
+    },
+    {
+      "id": "w0950",
+      "front": "smooth",
+      "back": "なめらかな、円滑な",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": "thの発音に注意"
+    },
+    {
+      "id": "w0951",
+      "front": "tight",
+      "back": "きつい、ぴったりした",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": "反対はloose"
+    },
+    {
+      "id": "w0952",
+      "front": "loose",
+      "back": "ゆるい",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": "反対はtight、発音はルース"
+    },
+    {
+      "id": "w0953",
+      "front": "correct",
+      "back": "正しい、正確な",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": "反対はwrong"
+    },
+    {
+      "id": "w0954",
+      "front": "perfect",
+      "back": "完璧な",
+      "category": "形容詞・副詞",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "w0955",
+      "front": "suddenly",
+      "back": "突然、急に",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": "(副) sudden + ly"
+    },
+    {
+      "id": "w0956",
+      "front": "finally",
+      "back": "ついに、最終的に",
+      "category": "形容詞・副詞",
+      "difficulty": 2,
+      "hint": "(副) final + ly"
+    },
+    {
+      "id": "w0957",
+      "front": "enter",
+      "back": "入る、入場する",
+      "category": "ものの動き・状態",
+      "difficulty": 1,
+      "hint": "enter the room（前置詞不要）"
+    },
+    {
+      "id": "w0958",
+      "front": "escape",
+      "back": "逃げる、脱出する",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "escape from ～"
+    },
+    {
+      "id": "w0959",
+      "front": "roll",
+      "back": "転がる、転がす",
+      "category": "ものの動き・状態",
+      "difficulty": 1,
+      "hint": "丸めるの意味も"
+    },
+    {
+      "id": "w0960",
+      "front": "float",
+      "back": "浮かぶ、漂う",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "sink（沈む）の反対"
+    },
+    {
+      "id": "w0961",
+      "front": "spin",
+      "back": "回る、回転する",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "くるくる回るイメージ"
+    },
+    {
+      "id": "w0962",
+      "front": "squeeze",
+      "back": "絞る、握りしめる",
+      "category": "ものの動き・状態",
+      "difficulty": 3,
+      "hint": "ギュッと押し縮める"
+    },
+    {
+      "id": "w0963",
+      "front": "stretch",
+      "back": "伸ばす、伸びる",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "ストレッチ運動の語源"
+    },
+    {
+      "id": "w0964",
+      "front": "swing",
+      "back": "揺れる、振る",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "ブランコ swing も"
+    },
+    {
+      "id": "w0965",
+      "front": "lean",
+      "back": "もたれる、傾く",
+      "category": "ものの動き・状態",
+      "difficulty": 2,
+      "hint": "lean on ～（～に寄りかかる）"
+    },
+    {
+      "id": "w0966",
+      "front": "crawl",
+      "back": "はう、ゆっくり進む",
+      "category": "ものの動き・状態",
+      "difficulty": 3,
+      "hint": "赤ちゃんがハイハイする動き"
+    },
+    {
+      "id": "w0967",
+      "front": "plug",
+      "back": "プラグ、差し込み",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": "コンセントに差す"
+    },
+    {
+      "id": "w0968",
+      "front": "update",
+      "back": "(動)更新する／(名)更新",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": "アプリやOSを最新に"
+    },
+    {
+      "id": "w0969",
+      "front": "folder",
+      "back": "フォルダ",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": "ファイルをまとめる入れ物"
+    },
+    {
+      "id": "w0970",
+      "front": "remote",
+      "back": "リモコン",
+      "category": "IT・身近な道具",
+      "difficulty": 2,
+      "hint": "remote control の略"
+    },
+    {
+      "id": "w0971",
+      "front": "budget",
+      "back": "予算",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0972",
+      "front": "employee",
+      "back": "従業員",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": "employer は雇用主"
+    },
+    {
+      "id": "w0973",
+      "front": "assignment",
+      "back": "課題、割り当て",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": "宿題や仕事の任務"
+    },
+    {
+      "id": "w0974",
+      "front": "income",
+      "back": "収入",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": "反対は expense(支出)"
+    },
+    {
+      "id": "w0975",
+      "front": "promotion",
+      "back": "昇進、販売促進",
+      "category": "仕事・学校",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "w0976",
+      "front": "refund",
+      "back": "払い戻し、返金",
+      "category": "仕事・学校",
+      "difficulty": 3,
+      "hint": "(動)返金する の意味も"
+    },
+    {
+      "id": "w0977",
+      "front": "semester",
+      "back": "学期",
+      "category": "仕事・学校",
+      "difficulty": 3,
+      "hint": "前期・後期の二学期制"
+    },
+    {
+      "id": "w0978",
+      "front": "overtime",
+      "back": "残業、時間外労働",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "w0979",
+      "front": "loan",
+      "back": "ローン、貸付金",
+      "category": "仕事・学校",
+      "difficulty": 2,
+      "hint": "借金として借りるお金"
+    }
   ]
 }
