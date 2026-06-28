@@ -287,44 +287,74 @@ function render() {
   el.answerControls.hidden = isQuiz;
   el.card.classList.toggle("card--quiz", isQuiz);
   if (isQuiz) {
-    renderQuiz(card, f);
+    renderQuiz(card);
   }
 
   updateStats();
 }
 
 /* ---------- クイズ（4択） ---------- */
-// 同デッキの他カードの「答え（裏面）」から誤答を選ぶ。
-// 同カテゴリを優先し、足りなければ全体から補う。
-function buildChoices(card, correctText) {
+// カードから取り出せる「答えの種類」を返す。
+//  - reading（読み）と meaning（意味）が両方あれば、その2種からランダムに出題
+//  - どちらも無いデッキ（英単語・県庁所在地など）は従来どおり back を問う
+// 逆引き ON のときは faces() で表裏が入れ替わるため answer 型に寄せる。
+function pickQuizType(card) {
+  if (!state.settings.reverse && card.reading && card.meaning) {
+    return Math.random() < 0.5 ? "reading" : "meaning";
+  }
+  return "answer";
+}
+
+// 問題タイプごとに「問い・正解・答えの取り出し方」を決める
+function quizSpec(card, type) {
+  if (type === "reading") {
+    return { prompt: "読みは？", correct: card.reading, valueOf: (c) => c.reading };
+  }
+  if (type === "meaning") {
+    return { prompt: "意味は？", correct: card.meaning, valueOf: (c) => c.meaning };
+  }
+  // answer: 従来どおり裏面（逆引き対応）
+  return { prompt: "", correct: faces(card).back, valueOf: (c) => faces(c).back };
+}
+
+// 同カテゴリを優先しつつ、同種の値（読みなら読み同士）から誤答を3つ選ぶ
+function buildChoices(card, spec) {
   const pool = state.cards.filter((c) => c.id !== card.id);
   const sameCat = pool.filter((c) => c.category === card.category);
   const ranked = shuffle(sameCat).concat(shuffle(pool.filter((c) => c.category !== card.category)));
 
   const distractors = [];
-  const seen = new Set([correctText]);
+  const seen = new Set([spec.correct]);
   for (const c of ranked) {
-    const text = faces(c).back;
-    if (seen.has(text)) continue;
+    const text = spec.valueOf(c);
+    if (!text || seen.has(text)) continue;
     seen.add(text);
     distractors.push(text);
     if (distractors.length >= 3) break;
   }
-  return shuffle([correctText, ...distractors]);
+  return shuffle([spec.correct, ...distractors]);
 }
 
-function renderQuiz(card, f) {
+function renderQuiz(card) {
   el.quizChoices.innerHTML = "";
   el.quizNextBtn.hidden = true;
-  const correct = f.back;
-  const choices = buildChoices(card, correct);
 
+  const type = pickQuizType(card);
+  const spec = quizSpec(card, type);
+
+  // 問題タイプ（読み／意味）をカード表面のヒント欄に表示
+  if (spec.prompt) {
+    el.hint.textContent = spec.prompt;
+    el.hint.style.display = "block";
+  }
+
+  const choices = buildChoices(card, spec);
   for (const text of choices) {
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "quiz-choice";
     btn.textContent = text;
-    btn.addEventListener("click", () => onQuizChoice(btn, text === correct, correct));
+    btn.addEventListener("click", () => onQuizChoice(btn, text === spec.correct, spec.correct));
     el.quizChoices.appendChild(btn);
   }
 }
