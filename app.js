@@ -287,6 +287,9 @@ function render() {
   el.answerControls.hidden = isQuiz;
   el.card.classList.toggle("card--quiz", isQuiz);
   if (isQuiz) {
+    // クイズ中は hint（答えのヒント）を出さない。問題タイプのみ renderQuiz が表示する
+    el.hint.textContent = "";
+    el.hint.style.display = "none";
     renderQuiz(card);
   }
 
