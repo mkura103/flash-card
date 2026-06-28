@@ -1,0 +1,11 @@
+{
+  "decks": [
+    { "id": "words", "file": "words.json", "name": "英単語(日常会話)" },
+    { "id": "kanji", "file": "kanji.json", "name": "難読漢字の読み" },
+    { "id": "yojijukugo", "file": "yojijukugo.json", "name": "四字熟語" },
+    { "id": "kotowaza", "file": "kotowaza.json", "name": "ことわざ・慣用句" },
+    { "id": "idiom", "file": "idiom.json", "name": "英熟語・イディオム" },
+    { "id": "prefecture", "file": "prefecture.json", "name": "県庁所在地" }
+  ],
+  "default": "words"
+}

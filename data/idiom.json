@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "title": "英熟語・イディオム",
+    "description": "日常でよく使う英熟語・イディオム。意味付き。"
+  },
+  "cards": [
+    {
+      "id": "i0001",
+      "front": "look forward to",
+      "back": "〜を楽しみに待つ",
+      "category": "句動詞",
+      "difficulty": 1,
+      "hint": "to の後は名詞・動名詞"
+    },
+    {
+      "id": "i0002",
+      "front": "give up",
+      "back": "あきらめる、やめる",
+      "category": "句動詞",
+      "difficulty": 1,
+      "hint": "give up doing で「〜するのをやめる」"
+    },
+    {
+      "id": "i0003",
+      "front": "find out",
+      "back": "〜を見つけ出す、知る",
+      "category": "句動詞",
+      "difficulty": 1,
+      "hint": "調べて分かるニュアンス"
+    },
+    {
+      "id": "i0004",
+      "front": "put off",
+      "back": "〜を延期する",
+      "category": "句動詞",
+      "difficulty": 2,
+      "hint": "= postpone"
+    },
+    {
+      "id": "i0005",
+      "front": "take care of",
+      "back": "〜の世話をする、対処する",
+      "category": "句動詞",
+      "difficulty": 1,
+      "hint": "look after も同義"
+    },
+    {
+      "id": "i0006",
+      "front": "run out of",
+      "back": "〜を使い果たす、切らす",
+      "category": "句動詞",
+      "difficulty": 2,
+      "hint": "of の後は使い切る対象"
+    },
+    {
+      "id": "i0007",
+      "front": "come up with",
+      "back": "(考えなど)を思いつく",
+      "category": "句動詞",
+      "difficulty": 2,
+      "hint": "アイデアを生み出す"
+    },
+    {
+      "id": "i0008",
+      "front": "get along with",
+      "back": "〜とうまくやっていく",
+      "category": "句動詞",
+      "difficulty": 2,
+      "hint": "人間関係で使う"
+    },
+    {
+      "id": "i0009",
+      "front": "look up to",
+      "back": "〜を尊敬する",
+      "category": "句動詞",
+      "difficulty": 2,
+      "hint": "反対は look down on"
+    },
+    {
+      "id": "i0010",
+      "front": "carry out",
+      "back": "(計画など)を実行する",
+      "category": "句動詞",
+      "difficulty": 2,
+      "hint": "= perform, execute"
+    },
+    {
+      "id": "i0011",
+      "front": "break down",
+      "back": "故障する、(交渉などが)決裂する",
+      "category": "句動詞",
+      "difficulty": 2,
+      "hint": "機械が壊れる時にも使う"
+    },
+    {
+      "id": "i0012",
+      "front": "turn down",
+      "back": "〜を断る、(音量を)下げる",
+      "category": "句動詞",
+      "difficulty": 2,
+      "hint": "提案を拒否する意味も"
+    },
+    {
+      "id": "i0013",
+      "front": "piece of cake",
+      "back": "とても簡単なこと",
+      "category": "イディオム",
+      "difficulty": 1,
+      "hint": "It's a piece of cake."
+    },
+    {
+      "id": "i0014",
+      "front": "once in a blue moon",
+      "back": "ごくまれに",
+      "category": "イディオム",
+      "difficulty": 2,
+      "hint": "頻度がとても低い"
+    },
+    {
+      "id": "i0015",
+      "front": "hit the books",
+      "back": "猛勉強する",
+      "category": "イディオム",
+      "difficulty": 2,
+      "hint": "試験前などに"
+    },
+    {
+      "id": "i0016",
+      "front": "break the ice",
+      "back": "(初対面などで)場を和ませる",
+      "category": "イディオム",
+      "difficulty": 2,
+      "hint": "緊張をほぐすきっかけ"
+    },
+    {
+      "id": "i0017",
+      "front": "under the weather",
+      "back": "体調が優れない",
+      "category": "イディオム",
+      "difficulty": 2,
+      "hint": "feel under the weather"
+    },
+    {
+      "id": "i0018",
+      "front": "cost an arm and a leg",
+      "back": "大金がかかる",
+      "category": "イディオム",
+      "difficulty": 3,
+      "hint": "非常に高価なこと"
+    },
+    {
+      "id": "i0019",
+      "front": "let the cat out of the bag",
+      "back": "うっかり秘密をもらす",
+      "category": "イディオム",
+      "difficulty": 3,
+      "hint": "秘密が漏れる"
+    },
+    {
+      "id": "i0020",
+      "front": "bite the bullet",
+      "back": "つらいことを覚悟してやる",
+      "category": "イディオム",
+      "difficulty": 3,
+      "hint": "嫌だが避けられない状況"
+    },
+    {
+      "id": "i0021",
+      "front": "the ball is in your court",
+      "back": "次はあなたが決める番だ",
+      "category": "イディオム",
+      "difficulty": 3,
+      "hint": "決定権が相手にある"
+    },
+    {
+      "id": "i0022",
+      "front": "spill the beans",
+      "back": "秘密をばらす",
+      "category": "イディオム",
+      "difficulty": 3,
+      "hint": "let the cat out of the bag と類似"
+    },
+    {
+      "id": "i0023",
+      "front": "in advance",
+      "back": "前もって、あらかじめ",
+      "category": "前置詞句",
+      "difficulty": 1,
+      "hint": "Thank you in advance."
+    },
+    {
+      "id": "i0024",
+      "front": "on purpose",
+      "back": "わざと、故意に",
+      "category": "前置詞句",
+      "difficulty": 1,
+      "hint": "反対は by accident"
+    },
+    {
+      "id": "i0025",
+      "front": "by the way",
+      "back": "ところで",
+      "category": "前置詞句",
+      "difficulty": 1,
+      "hint": "話題を変える時に"
+    },
+    {
+      "id": "i0026",
+      "front": "in charge of",
+      "back": "〜を担当して、責任を持って",
+      "category": "前置詞句",
+      "difficulty": 2,
+      "hint": "be in charge of"
+    },
+    {
+      "id": "i0027",
+      "front": "for the sake of",
+      "back": "〜のために",
+      "category": "前置詞句",
+      "difficulty": 2,
+      "hint": "目的・利益を表す"
+    },
+    {
+      "id": "i0028",
+      "front": "as a matter of fact",
+      "back": "実のところ、実際は",
+      "category": "前置詞句",
+      "difficulty": 2,
+      "hint": "= in fact"
+    },
+    {
+      "id": "i0029",
+      "front": "in terms of",
+      "back": "〜の観点から",
+      "category": "前置詞句",
+      "difficulty": 2,
+      "hint": "観点・側面を述べる"
+    },
+    {
+      "id": "i0030",
+      "front": "on behalf of",
+      "back": "〜を代表して、〜の代わりに",
+      "category": "前置詞句",
+      "difficulty": 3,
+      "hint": "代理・代表を表す"
+    }
+  ]
+}

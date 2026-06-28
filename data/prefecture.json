@@ -1,0 +1,384 @@
+{
+  "meta": {
+    "title": "県庁所在地",
+    "description": "47都道府県の県庁所在地。"
+  },
+  "cards": [
+    {
+      "id": "f0001",
+      "front": "北海道",
+      "back": "札幌市",
+      "category": "北海道・東北",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "f0002",
+      "front": "青森県",
+      "back": "青森市",
+      "category": "北海道・東北",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0003",
+      "front": "岩手県",
+      "back": "盛岡市",
+      "category": "北海道・東北",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "f0004",
+      "front": "宮城県",
+      "back": "仙台市",
+      "category": "北海道・東北",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0005",
+      "front": "秋田県",
+      "back": "秋田市",
+      "category": "北海道・東北",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0006",
+      "front": "山形県",
+      "back": "山形市",
+      "category": "北海道・東北",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0007",
+      "front": "福島県",
+      "back": "福島市",
+      "category": "北海道・東北",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0008",
+      "front": "茨城県",
+      "back": "水戸市",
+      "category": "関東",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0009",
+      "front": "栃木県",
+      "back": "宇都宮市",
+      "category": "関東",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0010",
+      "front": "群馬県",
+      "back": "前橋市",
+      "category": "関東",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0011",
+      "front": "埼玉県",
+      "back": "さいたま市",
+      "category": "関東",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "f0012",
+      "front": "千葉県",
+      "back": "千葉市",
+      "category": "関東",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0013",
+      "front": "東京都",
+      "back": "新宿区",
+      "category": "関東",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0014",
+      "front": "神奈川県",
+      "back": "横浜市",
+      "category": "関東",
+      "difficulty": 2,
+      "hint": ""
+    },
+    {
+      "id": "f0015",
+      "front": "新潟県",
+      "back": "新潟市",
+      "category": "中部",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0016",
+      "front": "富山県",
+      "back": "富山市",
+      "category": "中部",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0017",
+      "front": "石川県",
+      "back": "金沢市",
+      "category": "中部",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0018",
+      "front": "福井県",
+      "back": "福井市",
+      "category": "中部",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0019",
+      "front": "山梨県",
+      "back": "甲府市",
+      "category": "中部",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0020",
+      "front": "長野県",
+      "back": "長野市",
+      "category": "中部",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0021",
+      "front": "岐阜県",
+      "back": "岐阜市",
+      "category": "中部",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0022",
+      "front": "静岡県",
+      "back": "静岡市",
+      "category": "中部",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0023",
+      "front": "愛知県",
+      "back": "名古屋市",
+      "category": "中部",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0024",
+      "front": "三重県",
+      "back": "津市",
+      "category": "近畿",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0025",
+      "front": "滋賀県",
+      "back": "大津市",
+      "category": "近畿",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0026",
+      "front": "京都府",
+      "back": "京都市",
+      "category": "近畿",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0027",
+      "front": "大阪府",
+      "back": "大阪市",
+      "category": "近畿",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0028",
+      "front": "兵庫県",
+      "back": "神戸市",
+      "category": "近畿",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0029",
+      "front": "奈良県",
+      "back": "奈良市",
+      "category": "近畿",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0030",
+      "front": "和歌山県",
+      "back": "和歌山市",
+      "category": "近畿",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0031",
+      "front": "鳥取県",
+      "back": "鳥取市",
+      "category": "中国・四国",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0032",
+      "front": "島根県",
+      "back": "松江市",
+      "category": "中国・四国",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0033",
+      "front": "岡山県",
+      "back": "岡山市",
+      "category": "中国・四国",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0034",
+      "front": "広島県",
+      "back": "広島市",
+      "category": "中国・四国",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0035",
+      "front": "山口県",
+      "back": "山口市",
+      "category": "中国・四国",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0036",
+      "front": "徳島県",
+      "back": "徳島市",
+      "category": "中国・四国",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0037",
+      "front": "香川県",
+      "back": "高松市",
+      "category": "中国・四国",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0038",
+      "front": "愛媛県",
+      "back": "松山市",
+      "category": "中国・四国",
+      "difficulty": 3,
+      "hint": ""
+    },
+    {
+      "id": "f0039",
+      "front": "高知県",
+      "back": "高知市",
+      "category": "中国・四国",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0040",
+      "front": "福岡県",
+      "back": "福岡市",
+      "category": "九州・沖縄",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0041",
+      "front": "佐賀県",
+      "back": "佐賀市",
+      "category": "九州・沖縄",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0042",
+      "front": "長崎県",
+      "back": "長崎市",
+      "category": "九州・沖縄",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0043",
+      "front": "熊本県",
+      "back": "熊本市",
+      "category": "九州・沖縄",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0044",
+      "front": "大分県",
+      "back": "大分市",
+      "category": "九州・沖縄",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0045",
+      "front": "宮崎県",
+      "back": "宮崎市",
+      "category": "九州・沖縄",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0046",
+      "front": "鹿児島県",
+      "back": "鹿児島市",
+      "category": "九州・沖縄",
+      "difficulty": 1,
+      "hint": ""
+    },
+    {
+      "id": "f0047",
+      "front": "沖縄県",
+      "back": "那覇市",
+      "category": "九州・沖縄",
+      "difficulty": 2,
+      "hint": ""
+    }
+  ]
+}

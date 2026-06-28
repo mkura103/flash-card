@@ -16,6 +16,10 @@
     <!-- コントロールバー -->
     <section class="controls" aria-label="出題設定">
       <div class="control-group">
+        <label for="deck-select">デッキ</label>
+        <select id="deck-select"></select>
+      </div>
+      <div class="control-group">
         <label for="category-select">カテゴリ</label>
         <select id="category-select"></select>
       </div>
@@ -35,6 +39,19 @@
           <option value="order">登録順</option>
           <option value="srs">習熟度優先（苦手から）</option>
         </select>
+      </div>
+      <div class="control-group">
+        <label for="study-mode-select">学習方式</label>
+        <select id="study-mode-select">
+          <option value="flip">めくり</option>
+          <option value="quiz">クイズ（4択）</option>
+        </select>
+      </div>
+      <div class="control-group control-group--check">
+        <label for="reverse">
+          <input type="checkbox" id="reverse" />
+          逆引き（表裏入替）
+        </label>
       </div>
       <div class="control-group control-group--check">
         <label for="only-weak">
@@ -74,8 +91,14 @@
       </div>
     </section>
 
+    <!-- クイズ選択肢 -->
+    <section id="quiz-area" class="quiz-area" aria-label="選択肢" hidden>
+      <div id="quiz-choices" class="quiz-choices"></div>
+      <button id="quiz-next-btn" class="btn btn--secondary" type="button" hidden>次へ</button>
+    </section>
+
     <!-- 判定ボタン -->
-    <section class="answer-controls">
+    <section id="answer-controls" class="answer-controls">
       <button id="known-btn" class="btn btn--known" type="button">覚えた</button>
       <button id="unknown-btn" class="btn btn--unknown" type="button">まだ</button>
     </section>

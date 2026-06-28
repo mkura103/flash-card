@@ -4,27 +4,50 @@
  * - シャッフル / 登録順 / 習熟度優先 の出題、カテゴリ絞り込み、苦手のみ出題に対応
  */
 
-const STORAGE_KEY = "flashcard.progress.v1";
 const SETTINGS_KEY = "flashcard.settings.v1";
+// 学習記録はデッキごとに分ける（STORAGE_KEY はデッキ確定後に決まる）
+const PROGRESS_KEY_PREFIX = "flashcard.progress.v1.";
 
 const state = {
+  decks: [],          // [{ id, file, name }]
+  deckId: null,       // 現在のデッキid
   cards: [],          // 全カード
   queue: [],          // 現在の出題キュー（カードidの配列）
   index: 0,           // queue 内の現在位置
   flipped: false,
+  answered: false,    // クイズモードで回答済みか
   progress: {},       // id -> { level, correct, wrong, lastSeen }
-  settings: { category: "all", difficulty: "all", mode: "shuffle", onlyWeak: false },
+  settings: {
+    deck: null,
+    category: "all",
+    difficulty: "all",
+    mode: "shuffle",
+    studyMode: "flip", // flip | quiz
+    reverse: false,
+    onlyWeak: false,
+  },
 };
+
+function progressKey() {
+  return PROGRESS_KEY_PREFIX + (state.deckId || "default");
+}
 
 // DOM
 const el = {
   title: document.getElementById("deck-title"),
   desc: document.getElementById("deck-desc"),
+  deckSelect: document.getElementById("deck-select"),
   categorySelect: document.getElementById("category-select"),
   difficultySelect: document.getElementById("difficulty-select"),
   modeSelect: document.getElementById("mode-select"),
+  studyModeSelect: document.getElementById("study-mode-select"),
+  reverse: document.getElementById("reverse"),
   onlyWeak: document.getElementById("only-weak"),
   restartBtn: document.getElementById("restart-btn"),
+  quizArea: document.getElementById("quiz-area"),
+  quizChoices: document.getElementById("quiz-choices"),
+  quizNextBtn: document.getElementById("quiz-next-btn"),
+  answerControls: document.getElementById("answer-controls"),
   progressFill: document.getElementById("progress-fill"),
   progressCount: document.getElementById("progress-count"),
   accuracyText: document.getElementById("accuracy-text"),
@@ -48,7 +71,7 @@ const WEAK_THRESHOLD = 2; // level < この値 を苦手とみなす
 /* ---------- localStorage ---------- */
 function loadProgress() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(progressKey());
     state.progress = raw ? JSON.parse(raw) : {};
   } catch {
     state.progress = {};
@@ -56,7 +79,7 @@ function loadProgress() {
 }
 function saveProgress() {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress));
+    localStorage.setItem(progressKey(), JSON.stringify(state.progress));
   } catch { /* 容量超過などは無視 */ }
 }
 function loadSettings() {
@@ -79,14 +102,41 @@ function getCardProgress(id) {
 }
 
 /* ---------- データ読み込み ---------- */
+// デッキ一覧。decks.json が無い場合は words.json 単体にフォールバック
+async function loadDecks() {
+  try {
+    const res = await fetch("data/decks.json", { cache: "no-store" });
+    if (!res.ok) throw new Error();
+    const json = await res.json();
+    state.decks = Array.isArray(json.decks) ? json.decks : [];
+    // 設定 > decks.json の default > 先頭 の優先で初期デッキを決める
+    const ids = state.decks.map((d) => d.id);
+    if (state.settings.deck && ids.includes(state.settings.deck)) {
+      state.deckId = state.settings.deck;
+    } else if (json.default && ids.includes(json.default)) {
+      state.deckId = json.default;
+    } else {
+      state.deckId = ids[0] || null;
+    }
+  } catch {
+    state.decks = [{ id: "words", file: "words.json", name: "単語帳" }];
+    state.deckId = "words";
+  }
+}
+
 async function loadCards() {
-  const res = await fetch("data/words.json", { cache: "no-store" });
-  if (!res.ok) throw new Error(`words.json の取得に失敗しました (${res.status})`);
+  const deck = state.decks.find((d) => d.id === state.deckId) || state.decks[0];
+  const file = deck ? deck.file : "words.json";
+  const res = await fetch(`data/${file}`, { cache: "no-store" });
+  if (!res.ok) throw new Error(`${file} の取得に失敗しました (${res.status})`);
   const json = await res.json();
   state.cards = Array.isArray(json.cards) ? json.cards : [];
   if (json.meta) {
-    if (json.meta.title) el.title.textContent = json.meta.title;
-    if (json.meta.description) el.desc.textContent = json.meta.description;
+    el.title.textContent = json.meta.title || (deck && deck.name) || "単語帳";
+    el.desc.textContent = json.meta.description || "";
+  } else {
+    el.title.textContent = (deck && deck.name) || "単語帳";
+    el.desc.textContent = "";
   }
 }
 
@@ -130,6 +180,27 @@ function buildQueue() {
   state.flipped = false;
 }
 
+/* ---------- 表裏の取り出し（逆引き対応） ---------- */
+// 逆引き ON のときは front/back を入れ替える。hint は表面の補足なので逆引き時は出さない
+function faces(card) {
+  if (state.settings.reverse) {
+    return { front: card.back, back: card.front, hint: "" };
+  }
+  return { front: card.front, back: card.back, hint: card.hint || "" };
+}
+
+/* ---------- デッキ選択肢の生成 ---------- */
+function populateDecks() {
+  el.deckSelect.innerHTML = "";
+  for (const deck of state.decks) {
+    const opt = document.createElement("option");
+    opt.value = deck.id;
+    opt.textContent = deck.name || deck.id;
+    el.deckSelect.appendChild(opt);
+  }
+  el.deckSelect.value = state.deckId;
+}
+
 /* ---------- カテゴリ選択肢の生成 ---------- */
 function populateCategories() {
   const categories = [...new Set(state.cards.map((c) => c.category).filter(Boolean))];
@@ -144,9 +215,14 @@ function populateCategories() {
     opt.textContent = cat;
     el.categorySelect.appendChild(opt);
   }
+  // カテゴリはデッキごとに変わるため、現在のデッキに無い値は all に戻す
+  const catValues = ["all", ...categories];
+  if (!catValues.includes(state.settings.category)) state.settings.category = "all";
   el.categorySelect.value = state.settings.category;
   el.difficultySelect.value = state.settings.difficulty;
   el.modeSelect.value = state.settings.mode;
+  el.studyModeSelect.value = state.settings.studyMode;
+  el.reverse.checked = state.settings.reverse;
   el.onlyWeak.checked = state.settings.onlyWeak;
 }
 
@@ -181,6 +257,7 @@ function render() {
 
   // めくり状態をリセット
   state.flipped = false;
+  state.answered = false;
   el.card.classList.remove("flipped");
 
   el.cardCategory.textContent = card.category || "";
@@ -194,15 +271,79 @@ function render() {
   } else {
     el.cardDifficulty.style.display = "none";
   }
-  el.frontText.textContent = card.front;
-  el.hint.textContent = card.hint || "";
-  el.hint.style.display = card.hint ? "block" : "none";
-  el.backText.textContent = card.back;
+
+  const f = faces(card);
+  el.frontText.textContent = f.front;
+  el.hint.textContent = f.hint;
+  el.hint.style.display = f.hint ? "block" : "none";
+  el.backText.textContent = f.back;
 
   el.progressCount.textContent = `${state.index + 1} / ${total}`;
   el.progressFill.style.width = `${(state.index / total) * 100}%`;
 
+  // 学習方式に応じて UI を切り替える
+  const isQuiz = state.settings.studyMode === "quiz";
+  el.quizArea.hidden = !isQuiz;
+  el.answerControls.hidden = isQuiz;
+  el.card.classList.toggle("card--quiz", isQuiz);
+  if (isQuiz) {
+    renderQuiz(card, f);
+  }
+
   updateStats();
+}
+
+/* ---------- クイズ（4択） ---------- */
+// 同デッキの他カードの「答え（裏面）」から誤答を選ぶ。
+// 同カテゴリを優先し、足りなければ全体から補う。
+function buildChoices(card, correctText) {
+  const pool = state.cards.filter((c) => c.id !== card.id);
+  const sameCat = pool.filter((c) => c.category === card.category);
+  const ranked = shuffle(sameCat).concat(shuffle(pool.filter((c) => c.category !== card.category)));
+
+  const distractors = [];
+  const seen = new Set([correctText]);
+  for (const c of ranked) {
+    const text = faces(c).back;
+    if (seen.has(text)) continue;
+    seen.add(text);
+    distractors.push(text);
+    if (distractors.length >= 3) break;
+  }
+  return shuffle([correctText, ...distractors]);
+}
+
+function renderQuiz(card, f) {
+  el.quizChoices.innerHTML = "";
+  el.quizNextBtn.hidden = true;
+  const correct = f.back;
+  const choices = buildChoices(card, correct);
+
+  for (const text of choices) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "quiz-choice";
+    btn.textContent = text;
+    btn.addEventListener("click", () => onQuizChoice(btn, text === correct, correct));
+    el.quizChoices.appendChild(btn);
+  }
+}
+
+function onQuizChoice(btn, isCorrect, correctText) {
+  if (state.answered) return;
+  state.answered = true;
+
+  // 全選択肢を無効化し、正解・誤答を色付け
+  const buttons = el.quizChoices.querySelectorAll(".quiz-choice");
+  for (const b of buttons) {
+    b.disabled = true;
+    if (b.textContent === correctText) b.classList.add("is-correct");
+  }
+  if (!isCorrect) btn.classList.add("is-wrong");
+
+  // めくりモードと同じ習熟度ロジックに記録
+  recordAnswer(isCorrect);
+  el.quizNextBtn.hidden = false;
 }
 
 function updateStats() {
@@ -225,11 +366,31 @@ function updateStats() {
 /* ---------- 操作 ---------- */
 function flip() {
   if (!currentCard()) return;
+  if (state.settings.studyMode === "quiz") return; // クイズ中はめくらない
   state.flipped = !state.flipped;
   el.card.classList.toggle("flipped", state.flipped);
 }
 
-function answer(known) {
+// デッキを切り替える: カードと学習記録を読み直して再構築
+async function switchDeck(deckId) {
+  state.deckId = deckId;
+  state.settings.deck = deckId;
+  saveSettings();
+  loadProgress();
+  try {
+    await loadCards();
+  } catch (err) {
+    el.emptyMessage.hidden = false;
+    el.emptyMessage.textContent = `データ読み込みエラー: ${err.message}`;
+    el.card.style.visibility = "hidden";
+    return;
+  }
+  populateCategories();
+  restart();
+}
+
+// 習熟度・正答数を記録するだけ（画面遷移はしない）
+function recordAnswer(known) {
   const card = currentCard();
   if (!card) return;
   const p = getCardProgress(card.id);
@@ -242,7 +403,17 @@ function answer(known) {
   }
   p.lastSeen = Date.now();
   saveProgress();
+  updateStats();
+}
 
+// めくりモードの「覚えた / まだ」: 記録して次へ
+function answer(known) {
+  if (!currentCard()) return;
+  recordAnswer(known);
+  next();
+}
+
+function next() {
   state.index++;
   render();
 }
@@ -271,6 +442,21 @@ function bindEvents() {
 
   el.knownBtn.addEventListener("click", () => answer(true));
   el.unknownBtn.addEventListener("click", () => answer(false));
+  el.quizNextBtn.addEventListener("click", next);
+
+  el.deckSelect.addEventListener("change", () => {
+    switchDeck(el.deckSelect.value);
+  });
+  el.studyModeSelect.addEventListener("change", () => {
+    state.settings.studyMode = el.studyModeSelect.value;
+    saveSettings();
+    restart();
+  });
+  el.reverse.addEventListener("change", () => {
+    state.settings.reverse = el.reverse.checked;
+    saveSettings();
+    restart();
+  });
 
   el.categorySelect.addEventListener("change", () => {
     state.settings.category = el.categorySelect.value;
@@ -296,8 +482,13 @@ function bindEvents() {
   el.restartBtn.addEventListener("click", restart);
   el.resetBtn.addEventListener("click", resetProgress);
 
-  // キーボードショートカット: ←まだ / →覚えた
+  // キーボードショートカット
+  // めくり: ←まだ / →覚えた   クイズ: 回答後に → か Enter で次へ
   document.addEventListener("keydown", (e) => {
+    if (state.settings.studyMode === "quiz") {
+      if (state.answered && (e.key === "ArrowRight" || e.key === "Enter")) next();
+      return;
+    }
     if (e.key === "ArrowRight") answer(true);
     else if (e.key === "ArrowLeft") answer(false);
   });
@@ -305,8 +496,9 @@ function bindEvents() {
 
 /* ---------- 起動 ---------- */
 async function init() {
-  loadProgress();
   loadSettings();
+  await loadDecks();          // デッキ一覧と初期デッキの確定
+  loadProgress();             // 確定したデッキの学習記録を読む
   try {
     await loadCards();
   } catch (err) {
@@ -315,6 +507,7 @@ async function init() {
     el.card.style.visibility = "hidden";
     return;
   }
+  populateDecks();
   populateCategories();
   buildQueue();
   bindEvents();

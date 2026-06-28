@@ -208,3 +208,40 @@ body {
   .card-text { font-size: 1.6rem; }
   .controls { gap: 10px; }
 }
+
+/* ---------- クイズモード ---------- */
+.quiz-area {
+  width: 100%;
+  max-width: 520px;
+  margin: 16px auto 0;
+  padding: 0 16px;
+}
+.quiz-choices {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.quiz-choice {
+  width: 100%;
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 1rem;
+  background: var(--surface);
+  color: var(--text);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.quiz-choice:hover:not(:disabled) { border-color: var(--primary); }
+.quiz-choice:disabled { cursor: default; }
+.quiz-choice.is-correct {
+  border-color: var(--known);
+  background: rgba(47, 164, 90, 0.12);
+  font-weight: 600;
+}
+.quiz-choice.is-wrong {
+  border-color: var(--unknown);
+  background: rgba(224, 104, 60, 0.12);
+}
+#quiz-next-btn { margin-top: 14px; width: 100%; }
